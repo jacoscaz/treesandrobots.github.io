@@ -2,9 +2,9 @@
 title: Looping over async functions in ES6
 ---
 
-Over the last few weeks I've been spending some time on exploring the performance limits of implementing control loops in modern server-side JavaScript using Node.js **10.x**.
+Over the last few weeks I've been spending some time exploring the performance limits of using modern server-side JavaScript to write control loops.
 
-With this post, my primary goal is to acquire a general understanding of how long things take in the JavaScript world and how fast I can loop upon a `async` function.
+With this post, my primary goal is to acquire a general understanding of how long things take in the JavaScript world and how fast I can loop upon an `async` function in **Node.js 10.x**.
 
 ## Premise #1: async functions
 
