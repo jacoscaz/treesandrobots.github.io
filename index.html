@@ -17,14 +17,14 @@ treeandrobot: true
   <h2>There are no posts yet. I'll get around to write some, promise.</h2>
 {% else %}
 {% for post in site.posts %}
-  <div class="list-item">
-    <h2 class="list-post-title">
+  <article class="list-item">
+    <h1 class="list-post-title">
       <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-    </h2>
+    </h1>
     <div class="list-post-date">
       <time>{{ post.date | date_to_string }}</time>
     </div>
-  </div>
+  </article>
 {% endfor %}
 {% endif %}
 </div>

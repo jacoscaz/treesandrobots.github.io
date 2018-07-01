@@ -15,7 +15,7 @@ body {
 
 html {
 
-  font-family: "Inconsolata", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Fira Code", "Inconsolata", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
   font-weight: 300;
   line-height: 1.6;
@@ -35,7 +35,6 @@ body {
 a {
   color: #C00;
   text-decoration: none;
-  
   &:hover,
   &:focus {
     text-decoration: underline;
@@ -45,7 +44,7 @@ a {
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: .5rem;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.1;
   color: #333;
   letter-spacing: -.025rem;
@@ -135,7 +134,7 @@ hr {
 
 strong {
   color: #333;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 abbr {
@@ -314,7 +313,8 @@ tbody tr:nth-child(odd) th {
 .masthead {
 
   &-title {
-    font-weight: 300;
+    font-weight: 500;
+    font-size: 2.5rem;
     
     a {
       color: #333;
@@ -334,7 +334,7 @@ tbody tr:nth-child(odd) th {
   &-title--small {
     margin-bottom: .75rem;
     font-size: .75rem;
-    font-weight: 600;
+    font-weight: 500;
     text-transform: uppercase;
     
     a {
@@ -392,7 +392,8 @@ tbody tr:nth-child(odd) th {
 .list {
   &-post-title {
     margin-bottom: .25rem;
-    
+    font-size: 1.5rem;
+    font-weight: 400;
     a {
       color: #333;
       
