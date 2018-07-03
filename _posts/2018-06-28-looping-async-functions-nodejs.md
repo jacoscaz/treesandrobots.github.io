@@ -85,7 +85,7 @@ On my machine - a late 2013 MacBook Pro with a 2.4GHz Intel Core i5 - the averag
 | 1000000    | 95                          |
 | 10000000   | 85                          |
 
-Although this is something I would like to confirm and further expore in the future, my best guess is that the logarithmic nature of this correlation is due to dynamic optimizations - such as JIT compilation and instruction caching - taking place as the number of iterations builds up.
+Although this is something I would like to confirm and further explore in the future, my best guess is that the logarithmic nature of this correlation is due to dynamic optimizations - such as JIT compilation and instruction caching - taking place as the number of iterations builds up.
 
 At this point I stopped for a second a thought to myself: I'm measuring friggin' _nanoseconds_. How cool is that?
 
