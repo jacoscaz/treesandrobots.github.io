@@ -127,7 +127,7 @@ This first implementation yelded an average time of 250 nanoseconds per iteratio
 
 Even though recursive in nature, this code proves to be surprisingly memory-stable. I believe this is due to tail call optimization being enabled by the use of independent, one-off Promise(s) throughout the recursion.
 
-Much to my dismay, I quickly found out that the above only works if the execution of `task` is spread across multiple ticks of the event loop. As an example of such a task, the following requires 3 ticks to _resolve_:
+Much to my dismay, I quickly found out that the above only works correctly and as expected if the execution of `task` is spread across multiple ticks of the event loop. As an example of such a task, the following requires 3 ticks to _resolve_:
 
 ```js
 function wait(delay) {
@@ -144,9 +144,7 @@ async function task() {           // tick 1
 }
 ```
 
-As an aside, I think that last sentence might be better phrased as  _the `Promise` returned by the task takes 3 ticks to resolve_. However, in the context of `async` functions, I guess we can use _resolve_ as the logical equivalent of  _return_. It is worth stressing, however, that the task technically _returns_ a substantial amount of time **before** it _resolves_.
-
-Back to the main topic! The reason why this can be an issue is that many asynchronous functions are written in ways that - as far as their relationship with the event loop is concerned - are equivalent to the following:
+The reason why this can be an issue is that many asynchronous functions are written in ways that - as far as their relationship with the event loop is concerned - are equivalent to the following:
 
 ```js
 function task() {
