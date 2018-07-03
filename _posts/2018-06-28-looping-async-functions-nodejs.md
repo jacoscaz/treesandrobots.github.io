@@ -87,7 +87,7 @@ On my machine - a late 2013 MacBook Pro with a 2.4GHz Intel Core i5 - the averag
 
 Although this is something I would like to confirm and further explore in the future, my best guess is that the logarithmic nature of this correlation is due to dynamic optimizations - such as JIT compilation and instruction caching - taking place as the number of iterations builds up.
 
-At this point I stopped for a second a thought to myself: I'm measuring friggin' _nanoseconds_. How cool is that?
+At this point I stopped for a second and thought to myself: I'm measuring friggin' _nanoseconds_. How cool is that?
 
 As I am working on control loops, generally supposed to go through as many iterations as possible, I decided to proceed in my tests using 10000000 iterations (ten million). Furthermore, I decided for a reference average iteration time of 100  nanoseconds. In an ideal world where no overhead is required to keep executing it over and over, this should result in the task running around ten million times per second.
 
