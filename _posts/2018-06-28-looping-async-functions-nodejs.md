@@ -49,7 +49,7 @@ samplingLoop();
 outputLoop();
 ```
 
-On my machine, a Node.js process running this snippet alone shows an average event loop latency of roughly 2700 nanoseconds, which gives us around 370k loop ticks per second.
+In my local environment, a Node.js process running this snippet alone shows an average event loop latency of roughly 2700 nanoseconds, which gives us around 370k loop ticks per second.
 
 ## Baseline: synchronous task
 
@@ -72,7 +72,7 @@ const elapsed = timeDiffToNanoseconds(process.hrtime(before));
 console.log(`Avg. task execution time: ${Math.round(elapsed / iterations)}`);
 ```
 
-On my machine - a late 2013 MacBook Pro with a 2.4GHz Intel Core i5 - the average iteration time varied between tens of nanoseconds to tens of *thousands* of nanoseconds, depending on the number of iterations.
+Using a late 2013 MacBook Pro with a 2.4GHz Intel Core i5, the average iteration time varied between tens of nanoseconds to tens of *thousands* of nanoseconds, depending on the number of iterations.
 
 | Iterations | Average iteration time (ns) |
 | ---------- | --------------------------- |
@@ -89,7 +89,7 @@ Although this is something I would like to confirm and further explore in the fu
 
 At this point I stopped for a second and thought to myself: I'm measuring friggin' _nanoseconds_. How cool is that?
 
-As I am working on control loops, generally supposed to go through as many iterations as possible, I decided to proceed in my tests using 10000000 iterations (ten million). Furthermore, I decided for a reference average iteration time of 100  nanoseconds. In an ideal world where no overhead is required to keep executing it over and over, this should result in the task running around ten million times per second.
+As I am working on control loops, generally supposed to go through as many iterations as possible, I decided to proceed in my tests using 10000000 iterations (ten million). Furthermore, I decided for a reference average iteration time of 100  nanoseconds. In an ideal world where no overhead is required to keep executing a task over and over, this would result in around 10000000 (ten million, again) iterations per second.
 
 ## Loop #1: simple and disruptive
 
@@ -99,6 +99,12 @@ Given the asynchronous nature of promises and ES6's [tail call optimization][tai
 async function task() {
   return Math.random() + Date.now();
 }
+
+// As per premise #1, this could also be written as
+// 
+// function task() {
+//   return Promise.resolve(Math.random() + Date.now());
+// }
 
 function loop(iterations) {
   return new Promise((resolve, reject) => {
@@ -123,11 +129,19 @@ loop(iterations).then(() => {
 });
 ```
 
-This first implementation yelded an average time of 250 nanoseconds per iteration, circa 4 million iterations per second. A very good good start!
+This first implementation yelded an average time of 250 nanoseconds per iteration, circa 4 million iterations per second. A good start! Plus, even though recursive in nature, this code proved to be surprisingly memory-stable. That, I believe, is due to tail call optimization having been enabled by the use of independent, one-off Promise(s) throughout the recursion. 
 
-Even though recursive in nature, this code proves to be surprisingly memory-stable. I believe this is due to tail call optimization being enabled by the use of independent, one-off Promise(s) throughout the recursion.
+Much to my dismay, however, I quickly found out that the above only works as expected if the task requires multiple ticks of the JavaScript event loop to resolve. The reason why this can become an issue is that many asynchronous functions are written in ways that - as far as their relationship with the event loop is concerned - are equivalent to the following:
 
-Much to my dismay, I quickly found out that the above only works correctly and as expected if the execution of `task` is spread across multiple ticks of the event loop. As an example of such a task, the following requires 3 ticks to _resolve_:
+```js
+function task() {
+  return Promise.resolve();
+}
+```
+
+The problem here is that `Promise.resolve()` behaves in a manner that is similar to `process.nextTick()`, resulting in `.then()` callbacks being executed in __the same tick of the event loop in which the task itself is executed__. Therefore, adding the `loop()` function itself as a callback to `task().then()` results in an infinite recursion that, although devoid of memory leaks, effectively prevents the event loop from ever moving forward.
+
+As an example of a task that does not result in such a disruptive behaviour, the following one uses `setImmediate()` to spread its execution across multiple ticks of the event loop:
 
 ```js
 function wait(delay) {
@@ -144,18 +158,7 @@ async function task() {           // tick 1
 }
 ```
 
-The reason why this can be an issue is that many asynchronous functions are written in ways that - as far as their relationship with the event loop is concerned - are equivalent to the following:
-
-```js
-function task() {
-  console.log('Hello!');
-  return Promise.resolve();
-}
-```
-
-The problem here is that `Promise.resolve()` behaves in a manner that is similar to `process.nextTick()`, resulting in `.then()` callbacks being executed in __the same tick of the event loop in which the task itself is executed__. Therefore, adding the `loop()` function itself as a callback to `task().then()` results in an infinite recursion that, although devoid of memory leaks, effectively prevents the JavaScript event loop from ever moving forward.
-
-If you find yourself struggling with the difference between `setImmediate()` and `process.nextTick()` and/or asking your deity why would anyone in their right mind use the name `nextTick` for a method that schedules something to occur during the _current_ tick, I suggest having a look at [this really nice series of posts][nice-posts-on-timers] and [the official documentation on timers][nodejs-timers].
+If you find yourself struggling with the difference between `setImmediate()` and `process.nextTick()` and/or asking your deity why would anyone in their right mind use the name `nextTick` for a method that schedules something to occur during the _current_ tick, I suggest having a look at [this really nice series of posts][nice-posts-on-timers] and at [the official documentation on timers][nodejs-timers].
 
 ## Loop #2: the event loop is the only loop
 
