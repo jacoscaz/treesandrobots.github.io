@@ -19,7 +19,7 @@ treeandrobot: true
 {% for post in site.posts %}
   <article class="list-item">
     <h1 class="list-post-title">
-      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      <a href="{{ post.url | prepend:site.baseurl }}">{{ post.title }}</a>
     </h1>
     <div class="list-post-date">
       <time>{{ post.date | date_to_string }}</time>

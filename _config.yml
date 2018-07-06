@@ -4,10 +4,11 @@
 
 # Basic
 name:               "Trees and Robots"
+description:        "A blog about programming and life in general written by @jacoscaz"
 
 # URL
-#baseurl:            "/Kiko"
-baseurl:            "" #For Root Domain
+url:                "https://treesandrobots.com"
+baseurl:            ""
 permalink:          /:year/:month/:title.html
 
 # Markdown

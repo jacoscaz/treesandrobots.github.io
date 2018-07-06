@@ -1,5 +1,6 @@
 ---
 title: Trying to breathe new life into an iMac G5
+description: A failed attempt at fighting the irritating obsolescence of a wonderful iMac G5
 ---
 
 I've been asked to keep some stuff for a friend who's moving into a new house,

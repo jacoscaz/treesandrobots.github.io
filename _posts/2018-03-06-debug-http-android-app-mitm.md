@@ -1,5 +1,6 @@
 ---
 title: Inspecting Android's HTTP traffic with mitmproxy
+description: How to inspect network traffic in Android applications, including SSL-encrypted traffic, with a man-in-the-middle proxy
 ---
 
 The official Android documentation recommends using Android Studio's profiler to

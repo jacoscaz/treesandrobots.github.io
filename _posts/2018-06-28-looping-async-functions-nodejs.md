@@ -1,5 +1,6 @@
 ---
 title: Looping over async functions in ES6
+description: Exploring a few alternatives for implementing memory-stable control loops in modern ES6 JavaScript
 ---
 
 Over the last few weeks I've been spending some time exploring the performance limits of using modern server-side JavaScript to write control loops.
