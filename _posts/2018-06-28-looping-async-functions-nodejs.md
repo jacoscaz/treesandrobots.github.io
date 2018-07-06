@@ -170,7 +170,7 @@ async function task() {
   return Math.random() + Date.now();
 }
 
-function loop(executions) {
+function loop(iterations) {
   return new Promise((resolve, reject) => {
     function _loop(i) {
       if (i > 0) {
@@ -185,15 +185,15 @@ function loop(executions) {
         resolve();
       }
     }
-    _loop(executions);
+    _loop(iterations);
   });
 }
 
-const executions = 1e7;
+const iterations = 1e7;
 const before = process.hrtime();
-loop(1e3).then(() => {
+loop(iterations).then(() => {
   const elapsed = timeDiffToNanoseconds(process.hrtime(before));
-  console.log(`Avg. execution time: ${Math.round(elapsed / executions)}`);
+  console.log(`Avg. execution time: ${Math.round(elapsed / iterations)}`);
 });
 ```
 
@@ -205,7 +205,30 @@ Although an order of magnitude is usually a great deal, the vast majority of use
 
 However, as I wanted to see how far I could get, I decided to combine loop #1 and loop #2 into a hybrid loop. This new loop uses the potentially blocking behaviour of loop #1 up to a configurable number of executions, using loop #2's approach to let the event loop move onto the next tick every time such a limit is reached.
 
-The resulting library is called `LoopyLoop` and is available on [GitHub][loopyloop-github] and [NPM][loopyloop-npm].
+```js
+function loop(iterations) {
+  return new Promise((resolve, reject) => {
+    function _loop(i) {
+      if (i > 0) {
+        if (i % 10 === 0) {
+          setImmediate(() => {
+            _loop(i - 1);
+          });
+        } else {
+          task()
+            .then(() => _loop(i - 1))
+            .catch(reject);
+        }
+      } else {
+        resolve();
+      }
+    }
+    _loop(iterations);
+  });
+}
+```
+
+Happy with where I was heading, I decided to spend some time testing and refining this idea into something easy to integrate in my projects and (hopefully!) worth sharing. This ultimately resulted in `loopyLoop`, a Node.js package that provides a simple `EventEmitter`-based API for looping over `async` functions. `loopyloop` is available on [GitHub][loopyloop-github] and [NPM][loopyloop-npm].
 
 ```js
 const LoopyLoop = require('loopyloop');
@@ -214,8 +237,8 @@ async function task() {
   return Math.random() + Date.now();
 }
 
-const executions = 1e3;
-let i = executions;
+const iterations = 1e7;
+let i = iterations;
 
 const before = process.hrtime();
 const loop = new LoopyLoop(async () => {
@@ -228,16 +251,16 @@ const loop = new LoopyLoop(async () => {
 })
   .on('stopped', () => {
     const elapsed = timeDiffToNanoseconds(process.hrtime(before));
-    console.log(`Avg. execution time: ${Math.round(elapsed / executions)}`);
+    console.log(`Avg. execution time: ${Math.round(elapsed / iterations)}`);
   })
   .start();
 ```
 
-Loop #3 yelded an average iteration time of 750 nanoseconds, around 1.3 million iterations per second, putting it at a bit more than half the speed of loop #1 without the disrupting behaviour of the latter. Surprinsingly, this hybrid approach still manages to hit only one order of magnitude below the reference figure produced by the vastly simpler synchronous code.
+`loopyloop`-powered loop #3 yelded an average iteration time of 750 nanoseconds, around 1.3 million iterations per second, putting it at a bit more than half the speed of loop #1 without the disrupting behaviour of the latter. Surprinsingly, its hybrid approach still managed to hit only one order of magnitude below the reference figure produced by the vastly simpler synchronous code.
 
 ## Conclusion: the potential is there
 
-My conclusion for today is that modern server-side JavaScript using ES6 features can potentially run fast enough to handle basic control loops. With these numbers I feel comfortable in moving to the next step in my path: evaluating I/O performance on a few hardware platforms!
+My conclusion is that modern server-side JavaScript using ES6 features can potentially run fast enough to handle basic control loops. With these numbers I feel comfortable in moving to the next step in my path: evaluating I/O performance on a few hardware platforms.
 
 ## Addendum: full code
 
