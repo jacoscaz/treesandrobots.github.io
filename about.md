@@ -3,7 +3,7 @@ title: About
 permalink: /about/
 ---
 
-<p class="lead"><a href="/">Trees and Robots</a> is a blog about 
+<p class="lead"><a href="{{ site.baseurl | prepend:site.url }}">Trees and Robots</a> is a blog about 
 programming and life in general written by 
 <a href="https://jacoscaz.com">jacoscaz</a>.</p>
 
