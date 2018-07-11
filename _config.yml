@@ -1,6 +1,3 @@
-# # # # # # # #
-#   K i k o   #
-# # # # # # # #
 
 # Basic
 name:               "Trees and Robots"
@@ -10,10 +7,6 @@ description:        "A blog about programming and life in general written by @ja
 url:                "https://treesandrobots.com"
 baseurl:            ""
 permalink:          /:year/:month/:title.html
-
-# Markdown
-# Now unsupported by github pages
-# markdown:           rdiscount
 
 # Navigation
 nav:
@@ -40,3 +33,7 @@ defaults:
       type:         "posts"
     values:
       layout:       "post"
+
+markdown: kramdown
+kramdown:
+  input: GFM

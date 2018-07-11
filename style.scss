@@ -14,15 +14,10 @@ body {
 }
 
 html {
-
-  font-family: "Fira Code", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 18px;
+  font-family: "Fira Code", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
   font-weight: 300;
   line-height: 1.6;
-  
-  //@media (min-width: 38em) {
-  //  font-size: 20px;
-  //}
 }
 
 body {
@@ -33,136 +28,29 @@ body {
 }
 
 a {
-  color: #C00;
-  text-decoration: none;
+  color: inherit;
   &:hover,
+  &:visited,
   &:focus {
-    text-decoration: underline;
+    color: inherit;
   }
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
-  margin-bottom: .5rem;
+  margin: 1.5em 0 0.5em 0;
   font-weight: 500;
   line-height: 1.1;
   color: #333;
-  letter-spacing: -.025rem;
-}
-
-h1 {
-  font-size: 2rem;
-}
-
-h2 {
-  font-size: 1.5rem;
-}
-
-h3 {
-  font-size: 1.25rem;
-}
-
-h4, h5, h6 {
-  font-size: 1rem;
-}
-
-p {
-  margin: 0 0 1rem;
-}
-
-ul, ol, dl {
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-
-dt {
-  font-weight: bold;
-}
-
-dd {
-  margin-bottom: .5rem;
-}
-
-ul {
-  list-style: inside circle;
-  padding-left: 0;
-  
-  li {
-    margin-bottom: .25rem;
-  }
-  
-  ul,
-  ol {
-    margin-top: .25rem;
-    margin-bottom: .5rem;
-  }
-}
-
-ol {
-  list-style: inside decimal;
-  padding-left: 0;
-  
-  li {
-    margin-bottom: .25rem;
-  }
-  
-  ul,
-  ol {
-    margin-top: .25rem;
-    margin-bottom: .5rem;
-  }
-}
-
-p + h1,
-p + h2,
-p + h3,
-ul + h1,
-ul + h2,
-ul + h3,
-ol + h1,
-ol + h2,
-ol + h3 {
-  margin-top: 1.5rem;
-}
-
-hr {
-  border: 0;
-  border-top: .5px solid #eee;
-  border-bottom: .5px solid #eee;
-  margin: 1.5rem auto;
 }
 
 strong {
-  color: #333;
   font-weight: 500;
 }
 
-abbr {
-  font-size: 85%;
-  font-weight: bold;
-  color: #555;
-  text-transform: uppercase;
-}
-
-abbr[title] {
-  cursor: help;
-  border-bottom: 1px dotted #e5e5e5;
-}
-
-blockquote {
-  padding: 0 0 0 1.5rem;
-  margin: 0 2rem 1rem 0;
-  color: #999;
-  border-left: .5rem solid #e5e5e5;
-  
-  p:last-child {
-    margin-bottom: 0;
-  }
-}
 
 code,
 pre {
-  font-family: Menlo, Monaco, "Courier New", monospace;
+  font-family: "Fira Code", Menlo, Monaco, "Courier New", monospace;
 }
 
 code {
@@ -175,8 +63,8 @@ code {
 
 pre {
   display: block;
-  margin-top: 0;
-  margin-bottom: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
   padding: 1rem;
   font-size: .8rem;
   line-height: 1.4;
@@ -203,37 +91,12 @@ pre code {
   margin-bottom: 0;
 }
 
-.gist .gist-file {
-  font-family: Menlo, Monaco, "Courier New", monospace !important;
-}
-
-.gist .markdown-body {
-  padding: 15px;
-}
-
-.gist pre {
-  padding: 0;
-  background-color: transparent;
-}
-
-.gist .gist-file .gist-data {
-  font-size: .8rem !important;
-  line-height: 1.4;
-}
-
-.gist code {
-  padding: 0;
-  color: inherit;
-  background-color: transparent;
-  border-radius: 0;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  margin: 0 0 1rem;
-  border-radius: 5px;
-}
+// img {
+//   display: block;
+//   max-width: 100%;
+//   margin: 0 0 1rem;
+//   border-radius: 5px;
+// }
 
 table {
   margin-bottom: 1rem;
@@ -262,7 +125,6 @@ tbody tr:nth-child(odd) th {
   margin-left: auto;
   margin-right: auto;
   padding: 2.5rem 2rem;
-
 }
 
 .container.home {
@@ -273,15 +135,6 @@ tbody tr:nth-child(odd) th {
   left: 0;
   padding: 1.5rem;
   margin: 0;
-
-  //background: orange;
-  //background: orange;
-
-  //max-width: 38rem;
-
-  //margin-left:  auto;
-  //margin-right: auto;
-  //margin-left: 475px;
 
   @media (min-width: 768px) {
     left: 50%;
@@ -318,11 +171,7 @@ tbody tr:nth-child(odd) th {
     
     a {
       color: #333;
-      
-      &:hover,
-      &:focus {
-        text-decoration: none;
-      }
+      text-decoration: none;
     }
     
     span {
@@ -332,14 +181,11 @@ tbody tr:nth-child(odd) th {
   }
   
   &-title--small {
-    margin-bottom: .75rem;
     font-size: .75rem;
     font-weight: 500;
     text-transform: uppercase;
-    
     a {
       color: #333;
-      
       &:hover,
       &:focus {
         text-decoration: none;
@@ -393,7 +239,7 @@ tbody tr:nth-child(odd) th {
   &-post-title {
     margin-bottom: .25rem;
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 300;
     a {
       color: #333;
       
@@ -418,7 +264,7 @@ tbody tr:nth-child(odd) th {
 
 .highlight .hll { background-color: #ffffcc }
 .highlight .c { color: #999988; font-style: italic } /* Comment */
-.highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
+.highlight .err { color: #a61717; font-weight: bold } /* Error */
 .highlight .k { color: #000000; font-weight: bold } /* Keyword */
 .highlight .o { color: #000000; font-weight: bold } /* Operator */
 .highlight .cm { color: #999988; font-style: italic } /* Comment.Multiline */

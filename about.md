@@ -7,8 +7,7 @@ permalink: /about/
 programming and life in general written by 
 <a href="https://jacoscaz.com">jacoscaz</a>.</p>
 
-This blog is powered by [Jekyll](#). The theme is based upon the Kiko 
-theme by [@gfjaru](https://twitter.com/gfjaru).
+This blog is powered by [Jekyll](https://jekyllrb.com) and hosted on [GitHub Pages](https://pages.github.com).
 
 Jacopo Scazzosi &copy; 2016 - present.
 
