@@ -18,11 +18,11 @@ treeandrobot: true
 {% else %}
 {% for post in site.posts %}
   <article class="list-item">
-    <h1 class="list-post-title">
+    <h2 class="list-post-title">
       <a href="{{ post.url | prepend:site.baseurl }}">{{ post.title }}</a>
-    </h1>
+    </h2>
     <div class="list-post-date">
-      <time>{{ post.date | date_to_string }}</time>
+      <time>{{ post.date | date: "%Y-%m-%d" }}</time>
     </div>
   </article>
 {% endfor %}
