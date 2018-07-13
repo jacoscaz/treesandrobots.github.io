@@ -25,8 +25,8 @@ basic daily usage.
 
 However, I've had little luck in my attempts to breathe new life into this 
 machine. The main reason is the lack of a modern browser to explore the web of
-today, which is vastly more complex and computationally expensive than that of
-2005. My initial goal was to get the iMac to stream HTML5 video, which I find 
+today, which is vastly more complex and computationally expensive than that of 2005. 
+My initial goal was to get the iMac to stream HTML5 video, which I find 
 to be a good general indicator of a machine's compatibility with modern times. 
 So far I've tried what follows, without success.
 
