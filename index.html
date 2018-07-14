@@ -1,15 +1,22 @@
 ---
 layout: default
 treeandrobot: true
+links: 
+  - href: "/feed.xml"
+    type: "application/rss+xml"
+    rel: "alternate"
 ---
 <header class="masthead">        
   <h1 class="masthead-title">
-    <a href="{{ site.baseurl }}/">{{ site.name }}</a>
+    <a href="{{ site.baseurl | prepend:site.url }}">{{ site.name }}</a>
   </h1>
   <p class="by">by <a href="https://jacoscaz.com">Jacopo Scazzosi</a></p>
   <nav class="masthead-nav">
     {% for nav in site.nav %}
-    <a href="{{ nav.href }}">{{ nav.name }}</a>
+    <a href="{{ nav.href | prepend:site.baseurl | prepend:site.url }}"
+      {% if nav.type %}type="{{ nav.type }}"{% endif %}
+      {% if nav.rel %}rel="{{ nav.rel }}"{% endif %}
+      >{{ nav.name }}</a>
     {% endfor %}
   </nav>
 </header>
@@ -20,7 +27,7 @@ treeandrobot: true
 {% for post in site.posts %}
   <article class="list-item">
     <h2 class="list-post-title">
-      <a href="{{ post.url | prepend:site.baseurl }}">{{ post.title }}</a>
+      <a href="{{ post.url | prepend:site.baseurl | prepend:site.url }}">{{ post.title }}</a>
     </h2>
     <div class="list-post-date">
       <time>{{ post.date | date: "%Y-%m-%d" }}</time>

@@ -14,6 +14,8 @@ nav:
     href:           "/about"
   - name:           "RSS"
     href:           "/feed.xml"
+    rel:            "alternate"
+    type:           "application/rss+xml"
 
 # Sass
 sass:

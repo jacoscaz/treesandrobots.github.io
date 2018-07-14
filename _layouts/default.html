@@ -8,14 +8,23 @@
   <meta property="og:description" content="{{ page.description }}">
   <meta property="description" content="{{ page.description }}"> 
   {% else %}
-    <meta property="og:description" content="{{ site.description }}">
-    <meta property="description" content="{{ site.description }}"> 
+  <meta property="og:description" content="{{ site.description }}">
+  <meta property="description" content="{{ site.description }}"> 
   {% endif %}
   <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend:site.url }}">
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}</title>
   <link rel="stylesheet" href="{{ "/assets/fonts/firacode/fira_code.css" | prepend:site.baseurl }}">
   <link rel="stylesheet" href="{{ "/assets/css/normalize.css" | prepend:site.baseurl }}">
   <link rel="stylesheet" href="{{ "/style.css" | prepend:site.baseurl }}">
+  {% if page.links %}
+  {% for link in page.links %}
+    <link href="{{ link.href | prepend:site.baseurl | prepend:site.url }}"
+      {% if link.rel %} rel="{{ link.rel }}" {% endif %}
+      {% if link.alternate %} alternate="{{ link.alternate }}" {% endif %}
+      {% if link.type %} type="{{ link.type }}" {% endif %}
+      >
+  {% endfor %}
+  {% endif %}
   </head>
 <body>
     {% if page.treeandrobot %}
