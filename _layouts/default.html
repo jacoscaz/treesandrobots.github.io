@@ -6,10 +6,10 @@
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}">
   {% if page.description %}
   <meta property="og:description" content="{{ page.description }}">
-  <meta property="description" content="{{ page.description }}"> 
+  <meta name="description" property="description" content="{{ page.description }}"> 
   {% else %}
   <meta property="og:description" content="{{ site.description }}">
-  <meta property="description" content="{{ site.description }}"> 
+  <meta name="description" property="description" content="{{ site.description }}"> 
   {% endif %}
   <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend:site.url }}">
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}</title>
