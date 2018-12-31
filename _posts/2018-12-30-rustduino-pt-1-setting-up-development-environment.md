@@ -17,7 +17,7 @@ Fast forward to the ongoing winter festivities and I find myself, by coincidence
 
 I've decided to document my experiments in a series of blog posts, hopefully sparing a couple of headaches to other developers getting into these subjects. This first post deals with setting up the development environment. Although I work on a Mac and some of these instructions are specific to Mac OS, porting them to Linux should be relatively trivial.
 
-## Install XCode's developer tools and Mac OS' development headers
+## Install XCode's developer tools and Mac OS' development headers
 
 Start by installing `XCode`'s command-line developer tools:
 
