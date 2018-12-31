@@ -42,7 +42,7 @@ brew update
 brew install cmake openssl readline sqlite3 xz zlib python@2
 ```
 
-## Install the GCC AVR toolchain
+## Install the GCC AVR toolchain
 
 Install the GCC AVR toolchain, once again via `homebrew`:
 
@@ -58,7 +58,7 @@ This step requires compiling GCC, which takes ~30 minutes. Many thanks to all th
 
 Install the standard `rust` toolchain by following [the official guide][6]. This will also install the `rustup` toolchain management tool, which helps managing multiple `rust` builds on the same machine.
 
-## Install the AVR `rust` toolchain
+## Install the AVR `rust` toolchain
 
 Time to install the `rust` toolchain that targets the `AVR` architecture, which is the architecture of the `ATMega328P` that powers the `Arduino UNO`. Follow the steps in the [repository's README][4], which I have included below as I've had to slightly adapt them to work on Mac OS.
 
