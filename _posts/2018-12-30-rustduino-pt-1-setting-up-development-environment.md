@@ -104,7 +104,7 @@ If all goes well, this will produce an `.elf` file at `target/avr-atmega328p/rel
 
 ## Install the Arduino IDE and `avrdude`
 
-DAlthough we will not use it in the rest of this post, the official Arduino IDE will become necessary in the future.  Download it from [Arduino's home page][3] and install it as any other Mac OS application by moving it to the `/Applications` folder. Use it from the command line as follows:
+Although we will not use it in the rest of this post, the official Arduino IDE will become necessary in the future. Download it from [Arduino's home page][3] and install it as any other Mac OS application by moving it to the `/Applications` folder. Use it from the command line as follows:
 
 ```bash
 /Applications/Arduino.app/Contents/MacOS/Arduino
