@@ -1,5 +1,5 @@
 ---
-title: Rustduino pt.I: setting up the development environment
+title: "Rustduino pt. I: setting up the development environment"
 description: Installing and configuring a development environment to cross-compile rust programs for the AVR architecture and the Arduino UNO board.
 ---
 
