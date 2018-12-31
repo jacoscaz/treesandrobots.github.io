@@ -11,9 +11,9 @@ As a software developer who has always focused on high-level languages and frame
 
 Fast forward to the ongoing winter festivities and I find myself, by coincidence, with everything I need to begin my discovery:
 
-1) some lovely spare time;
-2) an `Arduino UNO` board based on the `ATMega328P` microcontroller;
-3) preliminary support for the microcontroller's `AVR` architecture in `rust`, an intriguing and relatively new programming language that I was already on my list of things to play with in 2019.
+1. some lovely spare time;
+2. an `Arduino UNO` board based on the `ATMega328P` microcontroller;
+3. preliminary support for the microcontroller's `AVR` architecture in `rust`, an intriguing and relatively new programming language that was already on my list of things to play with in 2019.
 
 I've decided to document my experiments in a series of blog posts, hopefully sparing a couple of headaches to other developers getting into these subjects. This first post deals with setting up the development environment. Although I work on a Mac and some of these instructions are specific to Mac OS, porting them to Linux should be relatively trivial.
 
@@ -60,7 +60,7 @@ Install the standard `rust` toolchain by following [the official guide][6]. This
 
 ## Install the AVR `rust` toolchain
 
-Time to install the `rust` toolchain that targets the `AVR` architecture, which is the architecture of the `ATMega328P` that powers the `Arduino UNO`. Follow the steps in the [repository's README][4], which I have included below as I've had to slightly adapt them to work on Mac OS.
+Time to install the `rust` toolchain that targets the `AVR` architecture, which is the architecture of the `ATMega328P` that powers the `Arduino UNO`. I had to make a few small modifications to the steps in the [repository's README][4]:
 
 ```bash
 # Grab the avr-rust sources
@@ -90,7 +90,7 @@ rustup toolchain link avr-toolchain <absolute path to avr-rust-build>/build/x86_
 
 ## Compile the `blink` example project
 
-Now that the AVR toolchain is ready, it's time to compile a small test program to later deploy on the Arduino UNO. Follow the instructions in the [official repo's README][10], included below as I've had to tweak them a little:
+Now that the AVR toolchain is ready, it's time to compile a small test program to later deploy on the Arduino UNO. `blink` programs are simple loops that toggle the state of light-emitting components on and off and they are to system programming what `hello, world!` programs are to normal programming. One such program is made available by the maintainer of the `AVR` toolchain which we have just installed. The following instructions are taken directly from the [official repo's README][10]:
 
 ```bash
 git clone https://github.com/avr-rust/blink.git avr-rust-blink
@@ -100,17 +100,17 @@ export XARGO_RUST_SRC=<absolute path to avr-rust>/src	# not avr-rust-build!
 rustup run avr-toolchain xargo build --target avr-atmega328p --release
 ```
 
-This should have produced an `.elf` file at `target/avr-atmega328p/release/blink.elf`.
+If all goes well, this will produce an `.elf` file at `target/avr-atmega328p/release/blink.elf`.
 
 ## Install the Arduino IDE and `avrdude`
 
-Download it from [Arduino's home page][3] and install it as any other Mac OS application by moving it to the `/Applications` folder. Use it from the command line as follows:
+DAlthough we will not use it in the rest of this post, the official Arduino IDE will become necessary in the future.  Download it from [Arduino's home page][3] and install it as any other Mac OS application by moving it to the `/Applications` folder. Use it from the command line as follows:
 
 ```bash
 /Applications/Arduino.app/Contents/MacOS/Arduino
 ```
 
-Although we will not use it in the rest of this post, the IDE will become necessary in the future. For the time being,  `avrdude` will take care of updating compiled programs to the board. Install it from homebrew:
+For the time being,  however, `avrdude` will take care of uploading compiled programs to the board. Install it from homebrew:
 
 ```bash
 brew update
@@ -119,17 +119,17 @@ brew install avrdude
 
 ## Deploy onto the Arduino UNO
 
-Connect the Arduino UNO via USB to the Mac. It should come up as a `/dev/tty.usbmodem****`. Use `avrdude` to upload the compiled program to the board:
+Connect the Arduino UNO via USB to the Mac. It should come up as a `/tty.usbmodem****` file in the `/dev` directory. Use `avrdude` to upload the compiled program to the board:
 
 ```bash
 avrdude -v -p atmega328p -c arduino -P /dev/tty.usbmodem14201 -b 115200 -D -Uflash:w:"target/avr-atmega328p/release/blink.elf"
 ```
 
-Further useful pointers [here][7],  [here][8] and [here][9].
+If everything goes well, one of the yellow LEDs on the board should start blinking at a leisurely pace. Hooray! Further useful pointers about uploading files to the board can be found [here][7], [here][8] and [here][9].
 
 ## Conclusion
 
-Voilà! We now have a development environment through which we can cross-compile our programs for the `AVR` architecture.
+We can now cross-compile `rust` programs and deploy them onto the Arduino UNO. Happy 2019!
 
 [1]: https://github.com/osx-cross/homebrew-avr
 [2]: https://github.com/avr-rust/blink/issues/6
