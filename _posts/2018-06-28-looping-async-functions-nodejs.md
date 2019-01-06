@@ -94,7 +94,7 @@ As I am working on control loops, generally supposed to go through as many itera
 
 ## Loop #1: simple and disruptive
 
-Given the asynchronous nature of promises and ES6's [tail call optimization][tail-call-optimization-post], I initially tested the following loop:
+Given the asynchronous nature of promises ~~and ES6's [tail call optimization][tail-call-optimization-post]~~, I initially tested the following loop:
 
 ```js
 async function task() {
@@ -130,7 +130,7 @@ loop(iterations).then(() => {
 });
 ```
 
-This first implementation yelded an average time of 250 nanoseconds per iteration, circa 4 million iterations per second. A good start! Plus, even though recursive in nature, this code proved to be surprisingly memory-stable. That, I believe, is due to tail call optimization having been enabled by the use of independent, one-off Promise(s) throughout the recursion. 
+This first implementation yelded an average time of 250 nanoseconds per iteration, circa 4 million iterations per second. A good start! ~~Plus, even though recursive in nature, this code proved to be surprisingly memory-stable. That, I believe, is due to tail call optimization having been enabled by the use of independent, one-off Promise(s) throughout the recursion.~~
 
 Much to my dismay, however, I quickly found out that the above only works as expected if the task requires multiple ticks of the JavaScript event loop to resolve. The reason why this can become an issue is that many asynchronous functions are written in ways that - as far as their relationship with the event loop is concerned - are equivalent to the following:
 
@@ -160,6 +160,8 @@ async function task() {           // tick 1
 ```
 
 If you find yourself struggling with the difference between `setImmediate()` and `process.nextTick()` and/or asking your deity why would anyone in their right mind use the name `nextTick` for a method that schedules something to occur during the _current_ tick, I suggest having a look at [this really nice series of posts][nice-posts-on-timers] and at [the official documentation on timers][nodejs-timers].
+
+_**UPDATE:** after further testing and some fantastic input from the community, I discovered that the afore-mentioned code does, indeed, result in a memory leak as I had initially expected. The apparent stability I had observed was due to a step-ladder growth in memory usage, with no apparent increase between repeated doublings. I imagine such growth to be due to an accumulation of Promise-related structures in the heap, although I have so far been unable to verify this theory and/or explain the step-ladder behaviour. All my attempts at doing so, either by using Node's inspector or by dumping the heap to disk, invariably result in the process crashing out of existence. It is also worth mentioning that [TCO](tail-call-optimization-post) was [dropped from V8 (and therefore Node) in July 2017](https://stackoverflow.com/a/42788286)._
 
 ## Loop #2: the event loop is the only loop
 
