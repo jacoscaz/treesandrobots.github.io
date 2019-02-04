@@ -40,6 +40,14 @@ My go-to browser extensions are DuckDuckGo Privacy Essential, uBlock Origin, Pri
 
 My search engine of choice is [DuckDuckGo](https://duckduckgo.com/). Once an ambitious but relatively unreliable search engine, it has evolved to the point in which it works very well for the vast majority of my searches. In those rare cases in which it doesn't, the `!g` shortcut makes it very easy to switch to Google without my hands ever leaving the keyboard. DuckDuckGo demonstrates the viability of a different business model for search engines, a model that does not thrive on tracking users throughout their online activity. Plus, it's called *DuckDuckGo*. What's not to like?
 
+## DNS
+
+I generally use [Cloudflare's DNS servers](https://1.1.1.1/), `1.1.1.1` and `1.0.0.1`. They are extremely fast, their IP addresses are easy to remember, DNS propagation usually hits them within 10 - 15 minutes and they have a strong privacy-first policy backed by a privacy-compatible business model.
+
+## VPN
+
+When I want to take things up a notch, I tunnel all my traffic through [TunnelBear](https://www.tunnelbear.com/). Reasonably fast, reasonably priced, I appreciate their *no logs*, human-readable [privacy policy](https://www.tunnelbear.com/privacy-policy) and the ease of use of their client applications. Furthermore, TunnelBear's entire infrastructure is [audited on a yearly basis](https://www.tunnelbear.com/blog/tunnelbear-completes-2nd-annual-independent-security-audit/), with audit reports made publicly available. I admire their transparency and I wish more companies would commit to such practices. I also enjoy the many bear-based metaphors across their brand.
+
 ## Footnotes
 
 <a name="firefox-pocket">[1]</a>: <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1172126">https://bugzilla.mozilla.org/show_bug.cgi?id=1172126</a>
