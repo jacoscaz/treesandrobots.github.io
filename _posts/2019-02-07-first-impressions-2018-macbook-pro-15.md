@@ -15,6 +15,6 @@ I've recently upgraded to a 2018 MacBook Pro 15'' from a 2013 MacBook Pro 13''. 
 - The screen is amazing, crispier than the 2013's and with greater color accuracy. I wasn't expecting *True Tone* to make such a difference.
 - The laptop is *fast* and seems free of thermal issues. I've yet to explore all the advantages brought by the new [T2 chip](https://support.apple.com/en-us/HT208862) but its presence is immediately noticeable.
 
-All in all, these first few hours with my new MacBook Pro made for a relatively solid experience, with the notable expection of requiring a separate and rather expensive USB-C hub right from the very beginning. 
+All in all, these first few hours with my new MacBook Pro made for a relatively solid experience, with the notable exception of requiring a separate and rather expensive USB-C hub right from the very beginning. 
 
 When compared to my 2013, this machine feels like a significantly different compromise between thinness/aesthetics and functionality/reliability. Personally, I think Apple has gone a step too far towards the former while sacrificing too much of the latter. The feeling of sheer marvel and excitement that I experienced when I bought my 2013 has been replaced by a wary contentment that doesn't feel quite *enough* for a machine at this price point.
