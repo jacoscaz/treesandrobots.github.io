@@ -5,7 +5,7 @@ layout: default
   <h1 class="masthead-title--small">
     <a href="{{ site.baseurl | prepend:site.url }}">{{ site.name }}</a>
   </h1>
-  <p class="by-small">by <a href="https://jacoscaz.com">Jacopo Scazzosi</a></p>
+  <p class="by-small">by <a href="{{ '/about' | site.baseurl | prepend:site.url }}">Jacopo Scazzosi</a></p>
 </header>      
 <article class="content post">
   <h1 class="post-title">{{ page.title }}</h1>
@@ -14,3 +14,7 @@ layout: default
   </div>
   {{ content }}
 </article>
+<footer>
+&copy; 2016 - {{ site.time | date: '%Y' }} <a href="{{ '/about' | site.baseurl | prepend:site.url }}">Jacopo Scazzosi</a>
+&bull; This site <a href="{{ '/about' | site.baseurl | prepend:site.url }}">does not track you</a>.
+</footer>
