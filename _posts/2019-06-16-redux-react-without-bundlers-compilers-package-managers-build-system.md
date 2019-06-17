@@ -42,14 +42,14 @@ the very least, a build system comprised of the following components:
 
 Developing competence in each of these tools is, in itself, a non-trivial
 effort. In fact, even the [official React tutorial](https://reactjs.org/tutorial/tutorial.html#prerequisites)
-doesn't actually teach developers how to set up their own local development
-environment but merely suggest the use of an additional tool, 
-`create-react-app`, to automate such management.
+doesn't teach developers how to manage their own development environment
+but merely suggest the use of an additional tool, `create-react-app`, to
+automate such management.
 
 Imagine my surprise when I found out that, as of today, bootstrapping a project
 with `create-react-app` introduces `4211` dependencies. 
-__Four-thousand-two-hundred-eleven__! And this is _before adding any 
-project-related dependency_.
+__Four-thousand-two-hundred-eleven__! And this is _before_ adding any 
+project-related dependency.
 
 This is __insane__, if only for the long-term stability of the resulting
 codebase. Furthermore, it's even more insane considering that there __are__ 
@@ -62,8 +62,8 @@ shipped as a part of the application.
 
 For __bundling__ and __minification__, the size of an application and/or the 
 number of HTTP requests made by the browser, especially considering caching, 
-aren't always a priority. They are in some contexts, of course, but not in 
-_every context_.
+are often not as critical as one might think. They are in some contexts, of 
+course, but not in _every_ context.
 
 For __transpilation__ of `ES6+` code into `ES5`, I would argue that what cannot
 be supported using polyfills should not be used until the relevant browsers are 
@@ -74,11 +74,12 @@ that support compilation at run time at the cost of slightly less efficient
 template rendering. 
 
 Whether each of these concerns would be better addressed by introducing a build
-system, adding a new step to an existing build system or by adopting a 
+system, adding a new step to an existing build system or adopting a 
 different solution should always be a matter of discussion on a case-by-case
 basis. Defaulting to a complete, all-encompassing build system just because 
 that is how a given framework is normally used seems myopic at best and 
-irresponsible at worst, no matter how good such a framework might be. 
+irresponsible at worst, no matter how good such framework and/or build system
+might be. 
 
 All of this said, I personally find `React` to be a delightful framework to 
 work with. I appreciate its focus on a more functional approach to UI
@@ -87,9 +88,10 @@ share so many reusable components. Whereas I'm not sure that `React` is here to
 stay for good - diffing and reconciling are expensive operations, after all - 
 it has definitely left an impression that will shape future frameworks.
 
-So, can we use `React` without a build system? Absolutely! What follows is a 
-simple `React` / `Redux` application that _just works_. No build system,
-just pure, client-side JavaScript. Enjoy!
+So, can we use `React` without a build system? Yes, absolutely!
+
+What follows is a simple `React` / `Redux` application that _just works_. No
+build system, just pure, client-side JavaScript. Enjoy!
 
 ```html
 <!doctype html>
