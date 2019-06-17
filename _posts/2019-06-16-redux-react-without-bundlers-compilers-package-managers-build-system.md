@@ -171,7 +171,10 @@ build system, just pure, client-side JavaScript. Enjoy!
        * props with the state's `counter` property and the `addOne` action 
        * creator.
        */
-      const connectWithCounter = ReactRedux.connect(mapStateToProps, mapDispatchToProps);
+      const connectWithCounter = ReactRedux.connect(
+        mapStateToProps, 
+        mapDispatchToProps,
+      );
 
       /*
        * ======================================================================
