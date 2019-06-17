@@ -91,7 +91,7 @@ So, can we use `React` without a build system? Absolutely! What follows is a
 simple `React` / `Redux` application that _just works_. No build system,
 just pure, client-side JavaScript. Enjoy!
 
-```js
+```html
 <!doctype html>
 <html>
   <head>
@@ -105,7 +105,7 @@ just pure, client-side JavaScript. Enjoy!
     <script crossorigin src="https://unpkg.com/htm@2.1.1/dist/htm.js"></script>
     <script>
 
-      /__
+      /**
        * Bind `htm` to `React.createElement()`
        *
        * Since htm is a generic library, we need to tell it what to "compile" 
@@ -122,14 +122,14 @@ just pure, client-side JavaScript. Enjoy!
        * ======================================================================
        */
 
-      /__
+      /**
        * Initial state
        */
       const initialState =  {
         counter: 0,
       };
 
-      /__
+      /**
        * Reducer
        */
       const rootReducer = (state = initialState, action) => {
@@ -141,12 +141,12 @@ just pure, client-side JavaScript. Enjoy!
         }
       };
 
-      /__
+      /**
        * Redux store
        */
       const store = Redux.createStore(rootReducer);
 
-      /__
+      /**
        * Action creator
        */
       const addOne = () => ({ type: 'ADD_ONE' });
@@ -164,7 +164,7 @@ just pure, client-side JavaScript. Enjoy!
         addOne,
       };
 
-      /__
+      /**
        * Wraps a dumb component and populates the `counter` and  the `addOne` 
        * props with the state's `counter` property and the `addOne` action 
        * creator.
@@ -177,7 +177,7 @@ just pure, client-side JavaScript. Enjoy!
        * ======================================================================
        */
 
-      /__
+      /**
        * Wraps a component so that all of its children using ReactRedux.connect()
        * can access the store.
        */
