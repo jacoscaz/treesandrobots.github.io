@@ -1,5 +1,5 @@
 ---
-title: "React and Redux without bundlers, compilers and package managers"
+title: "React without bundlers, compilers and package managers"
 description: "Making front-end development a little less complicated"
 ---
 
@@ -36,9 +36,9 @@ What a stark contrast to today's approach!
 Most of the modern frontend development methodology assumes the presence of, at
 the very least, a build system comprised of the following components:
 
-- a package manager (`NPM`, `Yarn`);
-- a compiler / transpiler (`Babel`);
-- a bundler (`Webpack`, `Rollup`).
+- package managers (`NPM`, `Yarn`);
+- compilers / transpilers (`Babel`, `node-scss`);
+- bundlers (`Webpack`, `Rollup`).
 
 Developing competence in each of these tools is, in itself, a non-trivial
 effort. In fact, even the [official React tutorial](https://reactjs.org/tutorial/tutorial.html#prerequisites)
@@ -48,28 +48,28 @@ environment but merely suggest the use of an additional tool,
 
 Imagine my surprise when I found out that, as of today, bootstrapping a project
 with `create-react-app` introduces `4211` dependencies. 
-**Four-thousand-two-hundred-eleven**! And this is _before adding any 
+__Four-thousand-two-hundred-eleven__! And this is _before adding any 
 project-related dependency_.
 
-This is **insane**, if only for the long-term stability of the resulting
-codebase. Furthermore, it's even more insane considering that there **are** 
+This is __insane__, if only for the long-term stability of the resulting
+codebase. Furthermore, it's even more insane considering that there __are__ 
 alternatives. Let's see:
 
-For **package management**, a CDN such as `unpkg.com` makes it trivial to
+For __package management__, a CDN such as `unpkg.com` makes it trivial to
 incorporate any package published on `NPM` using `<script>` tags. If 
 referencing an external CDN is not an option, source files can simply be 
 shipped as a part of the application.
 
-For **bundling** and **minification**, the size of an application and/or the 
+For __bundling__ and __minification__, the size of an application and/or the 
 number of HTTP requests made by the browser, especially considering caching, 
 aren't always a priority. They are in some contexts, of course, but not in 
 _every context_.
 
-For **transpilation** of `ES6+` code into `ES5`, I would argue that what cannot
+For __transpilation__ of `ES6+` code into `ES5`, I would argue that what cannot
 be supported using polyfills should not be used until the relevant browsers are 
 eliminated from the list of supported browsers that a project needs to target.
 
-For **compilation** of `JSX` into `JavaScript`, there are alternatives to `JSX`
+For __compilation__ of `JSX` into `JavaScript`, there are alternatives to `JSX`
 that support compilation at run time at the cost of slightly less efficient
 template rendering. 
 
@@ -85,11 +85,11 @@ work with. I appreciate its focus on a more functional approach to UI
 management and I appreciate how the community has come together to produce and
 share so many reusable components. Whereas I'm not sure that `React` is here to
 stay for good - diffing and reconciling are expensive operations, after all - 
-it has already left an impression that will surely shape future frameworks.
+it has definitely left an impression that will shape future frameworks.
 
 So, can we use `React` without a build system? Absolutely! What follows is a 
-simple `React` / `Redux` application that _just works_. No build build system,
-just pure client-side JavaScript. Enjoy!
+simple `React` / `Redux` application that _just works_. No build system,
+just pure, client-side JavaScript. Enjoy!
 
 ```js
 <!doctype html>
@@ -105,7 +105,7 @@ just pure client-side JavaScript. Enjoy!
     <script crossorigin src="https://unpkg.com/htm@2.1.1/dist/htm.js"></script>
     <script>
 
-      /**
+      /__
        * Bind `htm` to `React.createElement()`
        *
        * Since htm is a generic library, we need to tell it what to "compile" 
@@ -122,14 +122,14 @@ just pure client-side JavaScript. Enjoy!
        * ======================================================================
        */
 
-      /**
+      /__
        * Initial state
        */
       const initialState =  {
         counter: 0,
       };
 
-      /**
+      /__
        * Reducer
        */
       const rootReducer = (state = initialState, action) => {
@@ -141,12 +141,12 @@ just pure client-side JavaScript. Enjoy!
         }
       };
 
-      /**
+      /__
        * Redux store
        */
       const store = Redux.createStore(rootReducer);
 
-      /**
+      /__
        * Action creator
        */
       const addOne = () => ({ type: 'ADD_ONE' });
@@ -164,7 +164,7 @@ just pure client-side JavaScript. Enjoy!
         addOne,
       };
 
-      /**
+      /__
        * Wraps a dumb component and populates the `counter` and  the `addOne` 
        * props with the state's `counter` property and the `addOne` action 
        * creator.
@@ -177,7 +177,7 @@ just pure client-side JavaScript. Enjoy!
        * ======================================================================
        */
 
-      /**
+      /__
        * Wraps a component so that all of its children using ReactRedux.connect()
        * can access the store.
        */
