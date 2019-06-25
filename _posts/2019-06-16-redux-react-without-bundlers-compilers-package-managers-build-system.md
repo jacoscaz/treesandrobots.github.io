@@ -211,7 +211,7 @@ build system, just pure, client-side JavaScript. Enjoy!
         return html`
           <${Controls} />
         `;
-      })
+      });
 
       ReactDOM.render(App(), document.getElementById('app'));
 
