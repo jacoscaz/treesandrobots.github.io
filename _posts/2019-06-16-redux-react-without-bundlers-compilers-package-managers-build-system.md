@@ -33,12 +33,12 @@ solely for production releases.
 
 What a stark contrast to today's approach!
 
-Most of the modern frontend development methodology assumes the presence of, at
-the very least, a build system comprised of the following components:
+Most current development workflows require, at the very least, one or more of 
+the following:
 
-- package managers (`NPM`, `Yarn`);
-- compilers / transpilers (`Babel`, `node-scss`);
-- bundlers (`Webpack`, `Rollup`).
+- a package manager (`NPM`, `Yarn`);
+- a compiler / transpiler (`Babel`, `node-scss`);
+- a bundler (`Webpack`, `Rollup`).
 
 Developing competence in each of these tools is, in itself, a non-trivial
 effort. In fact, even the [official React tutorial](https://reactjs.org/tutorial/tutorial.html#prerequisites)
