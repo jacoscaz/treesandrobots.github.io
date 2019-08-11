@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="{{ "/assets/fonts/firacode/fira_code.css" | prepend:site.baseurl }}">
   <link rel="stylesheet" href="{{ "/assets/fonts/inter-ui/inter-ui.css" | prepend:site.baseurl }}">
   <link rel="stylesheet" href="{{ "/assets/css/normalize.css" | prepend:site.baseurl }}">
-  <link rel="stylesheet" href="{{ "/style.css" | prepend:site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/style.css" | prepend:site.baseurl }}?{{site.time | date: '%s'}}">
   {% if page.links %}
   {% for link in page.links %}
     <link href="{{ link.href | prepend:site.baseurl | prepend:site.url }}"
