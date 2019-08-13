@@ -45,11 +45,12 @@ consider giving in to the natural temptation of making yourself a small
 [frisella][frisella]. 350gr of tomatoes are clearly too much for two, after 
 all.
 
-As the water starts boiling, add salt and 400gr of fresh pasta. Cook the pasta
-to the only resonable consistency for proper pasta: [al dente][al-dente]. 
-Do not get distracted. Do not read emails. Do not look at your phone. 
-This is a good time to contemplate the marvel of nature as perfectly embodied
-by your wooden chopping board.
+As the water starts boiling, add a conservative handful of salt. Wait for a 
+minute, taste the water and adjust with a little more salt if needed. Add the
+pasta and let it cook to the only resonable consistency for proper pasta: 
+[al dente][al-dente]. Do not get distracted. Do not read emails. Do not look at 
+your phone. This is a good time to contemplate the marvel of nature as 
+perfectly embodied by your wooden chopping board.
 
 I warmly suggest using a type of fresh pasta called [pici][pici], often 
 described as fat spaghetti. Alternatively, [orecchiette][orecchiette] are an
