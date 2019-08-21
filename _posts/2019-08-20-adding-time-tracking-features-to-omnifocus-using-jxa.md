@@ -35,12 +35,12 @@ written in Node.js and available via [its repository on GitHub][14].
 
 Node.js? Indeed! While automation on Mac OS has traditionally been implemented
 using AppleScript, Apple has recently added support for JXA - JavaScript for 
-Automation - as an additional script language in Mac OS. As a JavaScript
+Automation - as an additional scripting language in Mac OS. As a JavaScript
 developer focusing on Node.js and backend development, this is music to my ears.
 
 > JavaScript for Automation (JXA) is an OSA (Open Scripting Architecture) 
-> script language in macOS. Introduced in OS X Yosemite, JXA is a peer of the
-> AppleScript language and as such has access to all macOS scriptable apps, 
+> scripting language in macOS. Introduced in OS X Yosemite, JXA is a peer of 
+> the AppleScript language and as such has access to all macOS scriptable apps, 
 > frameworks, and native UNIX utilities.
 
 However, a quick look on NPM brought me to the [osa2][13] package, which gave me 
