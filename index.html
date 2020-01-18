@@ -24,15 +24,16 @@ links:
 {% if site.posts.size == 0 %}
   <h2>There are no posts yet. I'll get around to write some, promise.</h2>
 {% else %}
-{% for post in site.posts %}
-  <article class="list-item">
-    <h2 class="list-post-title">
-      <a href="{{ post.url | prepend:site.baseurl | prepend:site.url }}">{{ post.title }}</a>
-    </h2>
-    <div class="list-post-date">
-      <time>{{ post.date | date: "%Y-%m-%d" }}</time>
-    </div>
-  </article>
-{% endfor %}
+  {% for post in site.posts %}
+    <article class="list-item">
+      <div class="list-post-date">
+        <time>{{ post.date | date: "%Y-%m-%d" }}</time>
+        <p>{{ post.section }}</p>
+      </div>
+      <h2 class="list-post-title">
+        <a href="{{ post.url | prepend:site.baseurl | prepend:site.url }}">{{ post.title }}</a>
+      </h2>
+    </article>
+  {% endfor %}
 {% endif %}
 </div>
