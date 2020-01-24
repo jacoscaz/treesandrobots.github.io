@@ -12,8 +12,9 @@ on [GitHub Pages][2]. It is self-contained, including all images and fonts, and
 does not use cookies nor JavaScript.
 
 Trees and Robots does not track its visitors and does not store personal 
-information of any kind nor uses any third-party service that does so. 
-*Visits* (not *visitors*) are tracked using [GoatCounter][4].
+information. The only third-party service used is [GoatCounter][4], a wonderful
+web statistics platform that is fully open-source, privacy-aware and committed
+to tracking *vists*, not *visitors*.
 
 Jacopo Scazzosi &copy; 2016 - {{ site.time | date: '%Y' }}.
 
