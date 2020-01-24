@@ -12,10 +12,12 @@ on [GitHub Pages][2]. It is self-contained, including all images and fonts, and
 does not use cookies nor JavaScript.
 
 Trees and Robots does not track its visitors and does not store personal 
-information of any kind.
+information of any kind nor uses any third-party service that does so. 
+*Visits* (not *visitors*) are tracked using [GoatCounter][4].
 
 Jacopo Scazzosi &copy; 2016 - {{ site.time | date: '%Y' }}.
 
 [1]: https://jekyllrb.com
 [2]: https://pages.github.com
 [3]: https://en.wikipedia.org/wiki/Static_web_page
+[4]: https://www.goatcounter.com

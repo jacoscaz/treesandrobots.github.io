@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="{{ "/assets/fonts/inter-ui/inter-ui.css" | prepend: site.baseurl }}">
   <!-- <link rel="stylesheet" href="{{ "/assets/css/normalize.css" | prepend: site.baseurl }}"> -->
   <link rel="stylesheet" href="{{ "/style.css" | prepend: site.baseurl }}?{{site.time | date: '%s'}}">
+  <link rel="canonical" href="{{ page.url | prepend: site.baseurl | prepend:site.url }}">
   {% if page.links %}
   {% for link in page.links %}
     <link href="{{ link.href | prepend: site.baseurl | prepend: site.url }}"
@@ -35,5 +36,15 @@
     {% endif %}
     <div id="content">{{ content }}</div>
   </div>
+  <script>
+  	(function() {
+  		window.counter = 'https://treesandrobots_com.goatcounter.com/count'
+  		var script = document.createElement('script');
+  		script.async = 1;
+  		script.src = '//gc.zgo.at/count.js';
+  		var ins = document.getElementsByTagName('script')[0];
+  		ins.parentNode.insertBefore(script, ins)
+  	})();
+  </script>
 </body>
 </html>
