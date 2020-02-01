@@ -27,7 +27,7 @@ I hope it will inspire others to think about their own themes, just as I was
 inspired by those of Myke and Grey.
 
 My yearly theme for 2020 is **System Consolidation**. It is comprised of two 
-carefully-selected words, the first of which represents how I intend to look
+carefully selected words, the first of which represents how I intend to look
 at myself and the second of which indicates what I intend to do with myself.
 
 In thinking of myself as a system, I aim to remind myself that I am a complex
@@ -50,7 +50,7 @@ responsibilities into something that can be serenely sustained over time.
 
 I am a software developer and a founder and director of a small, growing
 company. I am someone who works out. In no particular order I am also a partner,
-a friend, the owner of a dog, someone dear to his family and a 31 years old man.
+a friend, the owner of a dog, someone dear to his family and a 31 year-old man.
 
 This is who I am, and who I'll be throughout 2020. This is what I will get
 better at, what I will focus on. With whatever time will be left, if any, I
@@ -73,7 +73,7 @@ psychologist Jordan B. Peterson argues:
 
 Although there is a lot that I disagree about with Dr. Peterson, I find much of
 his material to be at least thought-provoking when not positively helpful and
-instructive. I highly suggest the afore-mentioned guide.
+instructive. I highly suggest the aforementioned guide.
 
 [1]: https://www.relay.fm/cortex/
 [2]: https://www.relay.fm/people/mykehurley
