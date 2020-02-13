@@ -51,12 +51,12 @@ _faster_ and _further_.
 
 ## Footnotes
 
-<a id="foot-1">\[1\]</a>: Technically speaking, _running_ is a human gait that
+\[<a id="foot-1">1</a>\]: Technically speaking, _running_ is a human gait that
 does not translate to dogs very well. When we think of a running dog we usually
 refer to a dog that is either [cantering or galloping][dog-gaits], two gaits
 that in larger dogs such as Nova result in speeds that few humans are able to 
 match (and certaily not me). When accompanying running humans, dogs usually 
-resort to [trotting][dog-traits], which is their most efficient gait.
+resort to [trotting][dog-gaits], which is their most efficient gait.
 
 [inferno-run]: https://www.infernorun.it/it/water/
 [maremma-sheepdog]: https://en.wikipedia.org/wiki/Maremma_Sheepdog
