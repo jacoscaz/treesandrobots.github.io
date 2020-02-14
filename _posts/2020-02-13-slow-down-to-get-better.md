@@ -1,9 +1,9 @@
 ---
 title: Slow down to get better
-description: How my dog taught me to run better
+description: How my dog helped me improve my running by slowing me down
 ---
 
-_TL;DR - Not sure how to improve your running technique? Get a dog!_
+_TL;DR - Unsure as to how to improve your running technique? Get a dog!_
 
 After a long time of doing nothing and letting my work life compromise my body
 in all sorts of annoying ways, I've recently teamed up with my brother to join
