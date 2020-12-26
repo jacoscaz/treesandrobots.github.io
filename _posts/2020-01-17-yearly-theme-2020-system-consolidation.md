@@ -1,6 +1,6 @@
 ---
-title: "My yearly theme for 2020: system consolidation"
-description: Celebrating the new year, Cortex-style
+title: "2020 yearly theme: System Consolidation"
+description: Celebrating 2020, Cortex-style
 ---
 
 In the website of [The Theme System Journal][5], the amazing hosts of the
