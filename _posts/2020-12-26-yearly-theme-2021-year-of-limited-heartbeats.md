@@ -24,7 +24,7 @@ My guiding principle for 2021 is to increase a) how efficient I am in using my h
 - significantly more physical activity, doesn't really matter what shape that takes;
 - less things, better things - I want to surround myself with material belongings that I _actively enjoy using_ and/or that _make me more efficient_, from kitchenware to clothes and shaving razors;
 - better ways to disengage from work, perhaps better note-taking techniques and/or separate devices for my work and personal lives;
-- branch out a little, at least one non-digital hobby (go back to play the bass?) while saving some time for learning system programming and hardware tinkering (home automation?).
+- branch out a little, at least one non-digital hobby (go back to playing the bass?) while saving some time for learning system programming and hardware tinkering (home automation?).
 
 However, just as the way 2020 is coming to a close, 2021 will start with a high degree of uncertainty. Who knows what committing to this theme will prompt me to do or whether I'll even manage to stick to it!
 
