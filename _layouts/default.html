@@ -13,10 +13,6 @@
   {% endif %}
   <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend:site.url }}">
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}</title>
-  <link rel="stylesheet" href="{{ "/assets/fonts/libre-baskerville/stylesheet.css" | prepend: site.baseurl }}">
-  <link rel="stylesheet" href="{{ "/assets/fonts/firacode/fira_code.css" | prepend: site.baseurl }}">
-  <link rel="stylesheet" href="{{ "/assets/fonts/inter-ui/inter-ui.css" | prepend: site.baseurl }}">
-  <!-- <link rel="stylesheet" href="{{ "/assets/css/normalize.css" | prepend: site.baseurl }}"> -->
   <link rel="stylesheet" href="{{ "/style.css" | prepend: site.baseurl }}?{{site.time | date: '%s'}}">
   <link rel="canonical" href="{{ page.url | prepend: site.baseurl | prepend:site.url }}">
   {% if page.links %}
