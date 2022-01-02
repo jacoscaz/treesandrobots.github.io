@@ -1,6 +1,6 @@
 ---
 layout: default
-treeandrobot: true
+bodyclass: home
 links: 
   - href: "/feed.xml"
     type: "application/rss+xml"
@@ -28,7 +28,6 @@ links:
     <article class="list-item">
       <div class="list-post-date">
         <time>{{ post.date | date: "%Y-%m-%d" }}</time>
-        <p>{{ post.section }}</p>
       </div>
       <h2 class="list-post-title">
         <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a>

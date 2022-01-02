@@ -25,12 +25,10 @@
   {% endfor %}
   {% endif %}
   </head>
-<body>
-  <div id="container">
-    {% if page.treeandrobot %}
-      <div id="treeandrobot"></div>
-    {% endif %}
-    <div id="content">{{ content }}</div>
-  </div>
+<body class=" {{ page.bodyclass }}">
+  {% if page.bodyclass == 'home' %}
+  <div id="treeandrobot"></div>
+  {% endif %} 
+  <div id="content">{{ content }}</div>
 </body>
 </html>
