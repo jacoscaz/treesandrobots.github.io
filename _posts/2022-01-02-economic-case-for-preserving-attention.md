@@ -10,7 +10,7 @@ impact that technology is having on my own attention span and on that of those
 that are around me. I can feel myself becoming restless as I struggle to 
 maintain focus on longer pieces of text, and I can feel the struggle growing as
 time goes by. Moreover, and perhaps more significantly, I can feel how 
-dramatically easier it becomes for me to maintain focus after a period of lower
+dramatically easier it becomes to maintain focus after a period of lower 
 exposure to technology.
 
 Although I am happy to see most scientific literature confirming that
@@ -27,4 +27,4 @@ patterns above all else to maximize exposure to advertisements.
 
 How far are we from that point? Does that point even exist? Could an economic
 case be made for ceasing to invest so many resources on hijacking our focus
-before it starts negatively affecting ad-based business models?
+before it starts to negatively affect ad-based business models?
