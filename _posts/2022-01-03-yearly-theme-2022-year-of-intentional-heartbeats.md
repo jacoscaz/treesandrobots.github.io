@@ -11,9 +11,9 @@ How did I do? Quite badly, in a good way.
 
 2021 turned out to be a truly wild year, both personally and professionally, with lots of unforeseen changes and chances.
 
-In the background, the third and fourth waves of COVID-19 infections and the advent of the Delta and Omicron variants the virus significantly impacted our collective ability to plan, travel and coordinate. At times, it felt like life was unfolding upon ever shifting dunes of sand.
+In the background, the third and fourth waves of COVID-19 infections and the advent of the Delta and Omicron variants significantly impacted our collective ability to plan, travel and coordinate. At times, it felt like life was unfolding upon ever shifting dunes of sand.
 
-Professionally, my business partners and I decided to part ways and shut down the company. I should have seen this coming, in retrospect, as by the beginning of 2021 we had clearly grown too far apart in our approaches to running a business and the conflict had been dangerously edging towards poisoning the workplace. Hindsight, however, is always 20/20. Letting go of something in which I had put so much of myself has been one of the most emotionally draining things I have ever done. On the positive side, I am very proud of the degree to which we supported those who worked with us, clients and employees alike, during this transition. I was particularly pleased to see of our employees moving ahead in their careers, with increases in both salaries and responsibilities. We had made it a point to make our company a place of personal and professional growth and we succeeded in doing so. Everyone is in a better place, now, and I have no regrets. New year, new company, new adventures.
+Professionally, my business partners and I decided to part ways and shut down the company. I should have seen this coming, in retrospect, as by the beginning of 2021 we had clearly grown too far apart in our approaches to running a business and the conflict had been dangerously edging towards poisoning the workplace. Hindsight, however, is always 20/20. Letting go of something in which I had put so much of myself has been one of the most emotionally draining things I have ever done. On the positive side, I am very proud of the degree to which we supported those who worked with us, clients and employees alike, during this transition. I was particularly pleased to see our employees moving ahead in their careers, with increases in both salaries and responsibilities. We had made it a point to make our company a place of personal and professional growth and we succeeded in doing so. Everyone is in a better place, now, and I have no regrets. New year, new company, new adventures.
 
 Personally, I lost a dear family member, bought a house with my partner, got engaged to said partner and started both renovating the house and planning the wedding. Overall, a truly joyous year of shared growth and deeper commitment to my wonderful half, laying the foundations (literally and metaphorically) for the years to come while having great fun doing so.
 
@@ -26,6 +26,8 @@ As last year's theme still feels very relevant to this year's me due to the limi
 Plus, I really need to work on my fitness, which would have dropped to an all-time low if it weren't for the daily walks and playtime with our canine companion.
 
 How will I do? See you in 2023!
+
+PS: a big shout-out to my lovely future wife for distilling my thoughts into such a wonderful theme.
 
 [1]: https://treesandrobots.com/2020/12/yearly-theme-2021-year-of-limited-heartbeats.html
 [2]: https://treesandrobots.com/2020/01/yearly-theme-2020-system-consolidation.html
