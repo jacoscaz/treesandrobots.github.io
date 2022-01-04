@@ -35,6 +35,6 @@ I guess we'll see at the of 2021. Happy new year everyone!
 [1]: /2020/01/yearly-theme-2020-system-consolidation.html
 [2]: https://www.thethemesystem.com
 [3]: https://www.relay.fm/cortex/110
-[5]: https://www.relay.fm/cortex/110
+[5]: https://www.relay.fm/cortex/95
 [4]: https://www.relay.fm/cortex
 [6]: https://www.wnycstudios.org/podcasts/anthropocene-reviewed
