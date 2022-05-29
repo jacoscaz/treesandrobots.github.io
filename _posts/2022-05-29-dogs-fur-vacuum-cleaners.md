@@ -19,8 +19,9 @@ unlike [Tumbleweed][1].
 Vacuuming consistency is *the* only long-term solution, here, and the tool that
 best enables vacuuming consistency is a nice [stick vacuum cleaner][2]. We've
 had a few so far, most notably a [Rowenta Air Force 360][4] and our current
-[Dyson V10][3], and here's what we've come to appreciate and dislike when it
-comes to this specific bit of technology:
+[Dyson V10][3]. Picking one is never easy and I've enjoyed perusing through
+reviews and selection criteria shared by others; it's only fair for us to share
+ours:
 
 1. **Capacity**: a stick vacuum cleaner should have a canister ample enough to
    last an entire floor, assuming consistent, daily usage. The battery should
@@ -51,8 +52,8 @@ comes to this specific bit of technology:
 
 For our latest pick I would have opted for something recommended by
 [r/VacuumCleaners][5] but ultimately settled on the Dyson due to a combination
-of good reviews by friends and family and to the fact that I can have it
-serviced close to home should I ever need to do so.
+of good reviews by friends and family and to the fact that we can have it
+serviced close to home should we ever need to do so.
 
 [0]: https://en.wikipedia.org/wiki/Maremma_Sheepdog
 [1]: https://en.wikipedia.org/wiki/Tumbleweed
