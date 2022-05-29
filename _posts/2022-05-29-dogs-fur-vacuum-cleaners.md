@@ -41,7 +41,7 @@ ours:
    as sturdy as some of the top-tier brands (Miele, Sabo, ...) but they're fine
    for their price range.
 4. **Articulated, motorized cleaner heads:** a stick vacuum cleaner should
-   have an articulated, motorized, rotating cleaner heads capable of fitting
+   have an articulated, motorized, rotating cleaner head capable of fitting
    in tight spaces. Rotating brushes are complementary to suction as they are
    dramatically more effective at dislodging dirt, dust and fur so that they
    may be picked up into the air flow. Both the Rowenta and the Dyson come with
