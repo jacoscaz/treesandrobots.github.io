@@ -34,7 +34,7 @@ ours:
    alternative. The Dyson has, so far, proven to be _excellent_ in this regard.
    Everything is painless and straightforward, from daily emptying to complete
    teardown.
-3. **Durability**: a stick vacuum cleaner should not feel like a toy a should
+3. **Durability**: a stick vacuum cleaner should not feel like a toy and should
    be capable of withstanding minor stresses to its frame. I've never had any
    structural issue with either the Rowenta or the Dyson, although the former
    did feel significantly sturdier than the latter. They don't quite feel
