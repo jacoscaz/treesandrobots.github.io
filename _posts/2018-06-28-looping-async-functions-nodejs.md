@@ -233,7 +233,7 @@ function loop(iterations) {
 Happy with where I was heading, I decided to spend some time testing and refining this idea into something easy to integrate in my projects and (hopefully!) worth sharing. This ultimately resulted in `loopyLoop`, a Node.js package that provides a simple `EventEmitter`-based API for looping over `async` functions. `loopyloop` is available on [GitHub][loopyloop-github] and [NPM][loopyloop-npm].
 
 ```js
-const LoopyLoop = require('loopyloop');
+const { LoopyLoop } = require('loopyloop');
 
 async function task() {
   return Math.random() + Date.now();
@@ -250,7 +250,7 @@ const loop = new LoopyLoop(async () => {
   } else {
     loop.stop();
   }
-})
+}, { maxChained: 1000 })
   .on('stopped', () => {
     const elapsed = timeDiffToNanoseconds(process.hrtime(before));
     console.log(`Avg. execution time: ${Math.round(elapsed / iterations)}`);
@@ -316,7 +316,7 @@ Here's the full, copy-paste-ready code for your enjoyment.
   // ================ TASK AND SETTINGS ================
   // ===================================================
 
-  const iterations = 1e7;
+  const iterations = 1e5;
 
   function task() {
     return Math.random() + Date.now();
@@ -349,7 +349,7 @@ Here's the full, copy-paste-ready code for your enjoyment.
         function _loop(i) {
           if (i > 0) {
             asyncTask()
-              .then(() => _loop(i -= 1))
+              .then(() => _loop(i - 1))
               .catch(reject);
           } else {
             resolve();
@@ -376,7 +376,7 @@ Here's the full, copy-paste-ready code for your enjoyment.
             asyncTask()
               .then(() => {
                 setImmediate(() => {
-                  _loop(i -= 1);
+                  _loop(i - 1);
                 });
               })
               .catch(reject);
@@ -397,7 +397,7 @@ Here's the full, copy-paste-ready code for your enjoyment.
   // ====================== LOOP #3 ====================
   // ===================================================
 
-  const LoopyLoop = require('loopyloop');
+  const { LoopyLoop } = require('loopyloop');
 
   function testLoop3() {
     return new Promise((resolve, reject) => {
@@ -405,12 +405,12 @@ Here's the full, copy-paste-ready code for your enjoyment.
       const before = process.hrtime();
       const loop = new LoopyLoop(async () => {
         if (i > 0) {
-          await task();
+          await asyncTask();
           i -= 1;
         } else {
           loop.stop();
         }
-      })
+      }, { maxChained: 1000 })
         .on('error', reject)
         .on('stopped', () => {
           const elapsed = timeDiffToNanoseconds(process.hrtime(before));
