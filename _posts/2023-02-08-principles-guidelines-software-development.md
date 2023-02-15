@@ -57,8 +57,8 @@ These concepts are orthogonal to each other, the former being intrinsic to
 software itself and the latter depending on the specific issues that a user is
 facing.
 
-Summarizing the above into a selected number of memorable properties, software
-is _good_ when it is:
+Coalescing the above into a set of memorable, easily defined properties,
+software is _good_ when it is:
 
 1. **Inspectable**: easy to understand and troubleshoot, explicit and
    straightfoward about what it does and how it does it, immediately
@@ -138,11 +138,19 @@ and characteristics.
 
 ### Project management
 
-1. All feature work should begin with a one-page document detailing **why**
-   the feature is needed (the business case), **what** the feature consists of,
-   **how** it will be built (from a technical standpoint), **who** is going to
-   build it and **when** it is going to be ready. Each of these should be
-   discussed with the relevant stakeholders.
+1. Feature work should begin with a limited number of iterations upon a
+   one-page document detailing:
+   - **what** the feature consists of
+   - **why** the feature is needed (business case)
+   - **who** the feature is for (target audience)
+   - **who** is going to build it
+   - **how** it should be built (from a technical standpoint)
+   - **how** it should be evaluated
+   - **when** it is going to be ready
+   - **when** it is going to be worked on
+2. Feature work should never begin in the same week it is laid out
+3. Feature work should be evaluated against quantitative data / metrics
+4. Most features will prove to be useless in the long term
 
 
 ## Additional reading
