@@ -10,16 +10,27 @@ permalink:          /:year/:month/:title.html
 
 # Navigation
 nav:
+  - name:           "Home"
+    href:           "/"
+  - name:           "Writings"
+    href:           "/writings.html"
+    layout:         "post"
+    rss:            "/feed.xml"
+  - name:           "Syslog"
+    href:           "/syslog.html"
+    layout:         "syslog"
+    rss:            "/feed-syslog.xml"
   - name:           "About"
-    href:           "/about"
-  - name:           "RSS"
-    href:           "/feed.xml"
-    rel:            "alternate"
-    type:           "application/rss+xml"
+    href:           "/about.html"
 
 # Sass
 sass:
   style:            :compressed
+
+
+collections:
+  syslog:
+    output: false
 
 # Scopes
 defaults:
@@ -35,6 +46,12 @@ defaults:
       type:         "posts"
     values:
       layout:       "post"
+  -
+    scope:
+      path:         ""
+      type:         "syslog"
+    values:
+      layout:       "syslog"
 
 markdown: kramdown
 kramdown:

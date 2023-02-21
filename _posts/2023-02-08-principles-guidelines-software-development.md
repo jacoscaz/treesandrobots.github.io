@@ -1,5 +1,5 @@
 ---
-title: Principles and guidelines for software development
+title: Principles and guidelines for (good) software development
 description: An essay and a series of guidelines on how to write good
              software and what makes software good
 ---

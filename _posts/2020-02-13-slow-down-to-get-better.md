@@ -17,7 +17,7 @@ however, I am often delightfully accompanied by Nova, a loving rescue who has
 consistently been making my life better ever since she joined our pack.
 
 <figure>
-  <img src="{{ '/images/nova.jpg' | prepend: site.baseurl | prepend: site.url }}">
+  <img src="{{ '/images/nova.jpg' | prepend: site.baseurl | prepend: site.url }}" width=400>
   <figcaption>
     Nova posing in the most serious and poised way she can muster
   </figcaption>

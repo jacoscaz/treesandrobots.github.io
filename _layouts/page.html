@@ -1,13 +1,9 @@
 ---
 layout: default
+smallmast: true
 ---
-<header class="masthead">
-  <h1 class="masthead-title--small">
-    <a href="{{ site.baseurl | prepend:site.url }}">{{ site.name }}</a>
-  </h1>
-  <p class="by-small">by <a href="https://jacoscaz.com">Jacopo Scazzosi</a></p>
-</header>      
-<article class="content page">
-  <h1 class="page-title">{{ page.title }}</h1>
-  {{ content }}
-</article>
+
+<h1 class="page-title">{{ page.title }}</h1>
+
+{{ content }}
+

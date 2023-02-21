@@ -19,10 +19,16 @@ body {
 }
 
 html {
-  font-family: Palatino, Georgia, 'Times New Roman', serif;
+  font-family: Iowan Old Style, Palatino, Georgia, Apple Garamond, Baskerville, Droid Serif, Times New Roman, Times, serif;
   font-size: 18px;
   font-weight: 300;
-  line-height: 1.6;
+  line-height: 1.5;
+}
+
+@media (min-width: 140rem) {
+  html {
+    font-size: 23px;
+  }
 }
 
 body {
@@ -55,7 +61,7 @@ strong {
 
 code,
 pre {
-  font-family: Monaco, Consolas, 'Courier New', monospace;
+  font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
 }
 
 code {
@@ -103,7 +109,7 @@ figure {
   img {
     display: block;
     max-width: 100%;
-    margin: 0 0 1rem;
+    margin: 0 auto 1rem auto;
     border-radius: 5px;
   }
 
@@ -152,37 +158,43 @@ body {
   overflow-x: hidden;
 }
 
-#content {
-  max-width: 48rem;
+// ----------------------------------------------
+//                  PAGE LAYOUT
+// ----------------------------------------------
+
+#page {
+  max-width: 46rem;
   margin: 0 auto;
-  padding: 1.4rem 1.5rem; 
+  position: relative;
+  left: -5.5rem;
 }
 
-body.home {
-  
-  @media (min-width: 1200px) {
-    
-    #content {
-      margin: 0 0 0 50%;
-      max-width: none;
-      width: 50%;
-    }
-    
-    #treeandrobot {
-      display: block;
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 50%;
-      height: 100%;
-      z-index: -1;
-      background-image: url('./assets/images/treeandrobot@2x.png');
-      background-repeat: no-repeat;
-      background-position: bottom left;
-      background-size: 100%;
-    }
+#sidebar {
+  max-width: 11rem;
+  float: left;
+  font-size: 0.85em;
+  margin-top: 20vh;
+}
 
+#content {
+  max-width: 35rem;
+  float: left;
+  // padding: 1.4rem 1.5rem; 
+}
 
+@media (max-width: 70rem) {
+  #page { 
+    left: 0;
+    padding: 1rem;
+  }
+  #sidebar { 
+    float: none;
+    max-width: none;
+    margin-top: 0;
+  }
+  #content {
+    float: none;
+    max-width: none;
   }
 }
 
@@ -191,8 +203,10 @@ body.home {
 
   &-title {
     font-weight: 500;
-    font-size: 2.5rem;
+    font-size: 1.75em;
     margin-bottom: 0;
+    margin-top: 0;
+    text-decoration: underline;
     a {
       color: #333;
       text-decoration: none;
@@ -203,30 +217,10 @@ body.home {
     }
     
   }
-  
-  &-title--small {
-    font-size: .85rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    margin-top: 0;
-    margin-bottom: 0;
-    a {
-      color: #333;
-      &:hover,
-      &:focus {
-        text-decoration: none;
-      }
-    }
-  }
 
   .by {
     margin-top: 0;
-    font-size: .85rem;
-    &-small {
-      margin: 0;
-      font-size: 0.75rem;
-      text-transform: none;
-    }
+    margin-bottom: 1em;
     a {
       &:hover,
       &:focus {
@@ -237,28 +231,40 @@ body.home {
   
 
   .masthead-nav {
-    margin: 2rem 0 2rem 0;
+    // margin: 2rem 0 2rem 0;
+
+    ul { padding: 0; margin: 0; }
+    li { list-style-type: none; }
     
+    &:hover a.active {
+      color: #aaa !important;
+    }
+
     a {
       color: #aaa;
       font-weight: 300;
       text-transform: lowercase;
-      -webkit-transition: all .2s ease;
-         -moz-transition: all .2s ease;
-              transition: all .2s ease;
 
       &:hover,
       &:focus {
-        color: #333;
+        color: #333 !important;
         text-decoration: none;
       }
 
-      + a {
-        margin-left: .25rem;
+      &.active {
+        color: #333 !important;
       }
+
     }
   }
 
+}
+
+@media (max-width: 70rem) {
+  .masthead-nav li {
+    display: inline-block;
+    margin-right: 0.5em;
+  }
 }
 
 footer {
@@ -291,24 +297,25 @@ footer {
     display: flex;
     align-items: center;
     position: relative;
-    margin-top: 1rem;
+    margin-top: 0.75rem;
+    font-size: 0.9em;
 
     .list-post-date {
       padding: 0; 
-      margin: 0.2rem 0.5rem 0 0;
-      flex: 0 0 4.75rem;
+      margin: 0.2em 0.5em 0 0;
+      flex: 0 0 6em;
       align-self: center;
-      font-size: .75rem;
-      line-height: .75rem;
-      height: .75rem;
+      font-size: .75em;
+      line-height: .75em;
+      height: .75em;
       text-transform: uppercase;
     }
 
     .list-post-title {
       padding: 0; 
       margin: 0;
-      line-height: 1.5rem;
-      font-size: 1.125rem;
+      line-height: 1.5em;
+      font-size: 1.125em;
       font-weight: 300;
       flex-grow: 1;
       a {
@@ -319,10 +326,32 @@ footer {
         }
       }
     }
+
+    .list-post-content.syslog {
+      margin: 0;
+      padding: 0;
+      font-size: 0.9em;
+      // font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+
+      p {margin: 0;}
+    }
     
   }
 }
 
+img#home-art {
+  display: block; 
+  position: fixed; 
+  bottom: 0; 
+  right: 0; 
+  max-height: 85vh; 
+  max-width: 70vw;
+  z-index: -1;
+}
 
-
-
+@media (max-width: 70rem) {
+  img#home-art {
+    max-width: 95vw;
+    max-height: 85vh;
+  }
+}

@@ -25,10 +25,35 @@
   {% endfor %}
   {% endif %}
   </head>
-<body class=" {{ page.bodyclass }}">
-  {% if page.bodyclass == 'home' %}
-  <div id="treeandrobot"></div>
-  {% endif %} 
-  <div id="content">{{ content }}</div>
+  <body>
+    <div id="page">
+  <div id="sidebar">
+    <header class="masthead">        
+      <h1 class="masthead-title">
+        <a href="{{ site.baseurl | prepend: site.url }}">{{ site.name }}</a>
+      </h1>
+      <p class="by">by Jacopo Scazzosi</p>
+      <nav class="masthead-nav">
+        <ul>
+        {% for nav in site.nav %}
+        <li>
+          <a href="{{ nav.href | prepend: site.baseurl | prepend: site.url }}"
+            {% if page.url == nav.href or page.layout == nav.layout %}class="active"{%endif%}
+          >{{ nav.name }}</a>
+          {% if nav.rss %}
+          (<a href="{{ nav.rss }}" type="application/rss+xml" rel="alternate">rss</a>)
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+      </nav>
+    </header>
+  </div>
+  <div id="content">
+    <main>
+    {{ content }}
+    </main>
+  </div>
+  </div>
 </body>
 </html>

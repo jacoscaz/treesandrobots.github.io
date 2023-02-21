@@ -67,7 +67,7 @@ with the quartered tomato and basil leaves. A few splashes of cooking water
 will help in case of an exceedinly dry mix.
 
 <figure>
-  <img src="{{ '/images/pasta.jpg' | prepend: site.baseurl | prepend: site.url }}">
+  <img src="{{ '/images/pasta.jpg' | prepend: site.baseurl | prepend: site.url }}" height=500>
   <figcaption>
     Pici coated in tomato-y deliciousness
   </figcaption>
