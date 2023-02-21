@@ -1,5 +1,5 @@
 ---
-title: 'Syslogs'
+title: 'Syslog'
 layout: page
 permalink: /syslog.html
 ---
