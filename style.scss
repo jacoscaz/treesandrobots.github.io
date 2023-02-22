@@ -163,38 +163,39 @@ body {
 // ----------------------------------------------
 
 #page {
-  max-width: 46rem;
+  width: 46rem;
   margin: 0 auto;
   position: relative;
   left: -5.5rem;
 }
 
 #sidebar {
-  max-width: 11rem;
+  width: 11rem;
   float: left;
   font-size: 0.85em;
   margin-top: 20vh;
 }
 
 #content {
-  max-width: 35rem;
+  width: 35rem;
   float: left;
-  // padding: 1.4rem 1.5rem; 
 }
 
 @media (max-width: 70rem) {
   #page { 
     left: 0;
+    width: auto;
+    max-width: 40rem;
     padding: 1rem;
   }
   #sidebar { 
     float: none;
-    max-width: none;
+    width: auto;
     margin-top: 0;
   }
   #content {
     float: none;
-    max-width: none;
+    width: auto;
   }
 }
 
