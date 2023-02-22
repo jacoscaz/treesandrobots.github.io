@@ -9,6 +9,7 @@ layout: null
     <description>Trees and Robots is a blog about programming and life in general written by Jacopo Scazzosi</description>
 		<atom:link href="{{ "/feed.xml" | prepend:site.baseurl | prepend:site.url}}" rel="self" type="application/rss+xml" />
 		{% for post in site.posts %}
+		{% if post.hidden != true %}
 		<item>
 			<title>{{ post.title | xml_escape }}</title>
 			<description>
@@ -19,6 +20,7 @@ layout: null
 			<guid isPermaLink="true">{{ post.url | prepend:site.baseurl | prepend:site.url }}</guid>
 			<author>jacopo@scazzosi.com (Jacopo Scazzosi)</author>
 		</item>
+		{% endif %}
 		{% endfor %}
 	</channel>
 </rss>
