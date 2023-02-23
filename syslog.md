@@ -8,7 +8,8 @@ permalink: /syslog.html
 {% if site.syslog.size == 0 %}
   <h2>There are no posts yet. I'll get around to write some, promise.</h2>
 {% else %}
-  {% for post in site.syslog %}
+  {% assign posts = site.syslog | sort: 'date' | reverse %}
+  {% for post in posts %}
     {% if post.hidden != true %}
       <article class="list-item">
         <div class="list-post-date">
