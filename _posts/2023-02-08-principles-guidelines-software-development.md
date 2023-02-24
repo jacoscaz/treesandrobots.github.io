@@ -21,10 +21,10 @@ In turn, this question raises another, even more fundamental question:
 Why make software _at all_? What is the goal of software development?
 Let's start from this one.
 
-The goal of software development is to solve problems through software,
-to develop and maintain software instruments that facilitate and assist
-their users in overcoming the hurdles and challenges that life presents
-them with.
+The goal of software development is to solve problems through software.
+More specifically, the goal of software development it is to develop and
+maintain software instruments that assist their users in overcoming the
+hurdles and challenges scattered throughout their lives.
 
 **Software, therefore, can only be as good as the degree to which it helps
 its users confront the problem that the developer set out to address.**
@@ -49,8 +49,7 @@ characterize it:
 
 **Software, therefore, can only be as good as the degree to which it fits
 these dynamics**, with the intimate understanding of their profound humanity
-and of the fact that software is ultimately built, or should be built, for
-humans.
+and of the fact that software is ultimately built for humans.
 
 Note that _good_ software doesn't necessarily coincide with _useful_ software.
 These concepts are orthogonal to each other, the former being intrinsic to
