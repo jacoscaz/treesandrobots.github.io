@@ -15,8 +15,8 @@ layout: null
 				{{ post.content | xml_escape }}
 			</description>
 			<pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-			<link>{{ post.url | prepend:site.baseurl | prepend:site.url }}</link>
-			<guid isPermaLink="false">{{ post.url | prepend:site.baseurl | prepend:site.url }}</guid>
+			<link>{{ site.baseurl | prepend:site.url }}/syslog.html#{{ post.url}}</link>
+			<guid isPermaLink="true">{{ site.baseurl | prepend:site.url }}/syslog.html#{{ post.url}}</guid>
 			<author>jacopo@scazzosi.com (Jacopo Scazzosi)</author>
 		</item>
 		{% endfor %}

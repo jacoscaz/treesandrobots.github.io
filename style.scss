@@ -300,6 +300,12 @@ footer {
     position: relative;
     margin-top: 0.75rem;
     font-size: 0.9em;
+    padding: 0 0.5rem;
+    // left: -0.25rem;
+
+    &:target {
+      background: #ede8cb;
+    }
 
     .list-post-date {
       padding: 0; 
@@ -310,6 +316,14 @@ footer {
       line-height: .75em;
       height: .75em;
       text-transform: uppercase;
+
+      a {
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
     }
 
     .list-post-title {

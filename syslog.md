@@ -11,12 +11,12 @@ permalink: /syslog.html
   {% assign posts = site.syslog | sort: 'date' | reverse %}
   {% for post in posts %}
     {% if post.hidden != true %}
-      <article class="list-item">
+      <article class="list-item" id="{{post.url}}">
         <div class="list-post-date">
-          <time>{{ post.date | date: "%Y-%m-%d" }}</time>
+          <a href="/syslog.html#{{post.url}}"><time>{{ post.date | date: "%Y-%m-%d" }}</time></a>
         </div>
         <div class="list-post-content syslog">
-        {{ post.content }}
+          {{ post.content }}
         </div>
       </article>
     {% endif %}
