@@ -28,7 +28,7 @@ As a practical example, anyone old enough to have used [mIRC][3] or a version
 of the original Skype can attest to just how frustratingly slow Slack and
 Microsoft Teams are in comparison, particularly given that they run on much
 more capable hardware. The same can be said of text editors, where the 
-venerable [Vim][6] and [Emacs][7] are still outperforming any of their recent 
+venerable [Vim][6] and [Emacs][7] are still outperforming many of their recent 
 peers, both in terms of responsiveness and memory usage.
 
 Why are we struggling to rid ourselves of this epidemic of abysmal software
@@ -50,16 +50,17 @@ compounding into one another and resulting in abysmally slow and wasteful
 applications.
 
 Another example of the same tradeoff applied in a different context is the
-organizational push towards software architectures based on microservices,
-optimizing for a greater degree of separation while also significantly
-increasing the chances of performance bottlenecks emerging in the interfaces
-between different services.
+overly aggressive organizational push towards software architectures based on
+microservices, optimizing for a greater degree of separation while also
+significantly increasing the chances of performance bottlenecks emerging in
+the interfaces between different services.
 
-Obviously, performance is not the goal of software and we should not optimize
-for it at the expense of everything else. However, it does feel like we have 
-strayed too far towards the opposite end of the spectrum, leaving performance
-as an afterthought and wasting an incredible amount of collective time in doing
-so. It's a cultural problem and I'm happy that Casey has reminded us of it.
+Obviously, performance is not the goal of (most) software and we should not
+optimize for it at the expense of everything else. However, it does feel like
+we have strayed too far towards the opposite end of the spectrum, leaving
+performance as an afterthought and wasting an incredible amount of collective
+time in doing so. It's a cultural problem and I'm happy that Casey has reminded
+us of it.
 
 [1]: https://www.computerenhance.com/p/clean-code-horrible-performance
 [2]: https://news.ycombinator.com/item?id=34966137
