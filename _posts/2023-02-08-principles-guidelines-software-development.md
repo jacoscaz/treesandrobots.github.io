@@ -167,6 +167,6 @@ appropriate to highlight some of their wonderful writing:
 - The Small Techonology Foundation's [definition of Small Technology](https://small-tech.org/about/#small-technology)
 - Benji Weber's [Why I Strive to be a 0.1x Engineer](https://benjiweber.co.uk/blog/2016/01/25/why-i-strive-to-be-a-0-1x-engineer/)
 - Uselessdev's [You will never fix it later](https://uselessdevblog.wordpress.com/2022/11/10/stop-lying-to-yourself-you-will-never-fix-it-later/)
-
+- Nikita Prokpov's [Software disenchantment](https://tonsky.me/blog/disenchantment/)
 
 
