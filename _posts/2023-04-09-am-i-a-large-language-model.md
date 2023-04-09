@@ -69,7 +69,7 @@ evolutionary advantage that life had ever manifested.
 
 Perhaps the question should not be whether I am one such model or not but
 whether there's anything more to me that goes beyond a large language model
-and what is it.
+and what that might be.
 
 [1]: https://en.wikipedia.org/wiki/Bloodletting
 [2]: https://confusedbit.dev/posts/how_does_gpt_work/
