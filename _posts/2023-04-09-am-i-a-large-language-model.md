@@ -32,10 +32,11 @@ Models such as the GPTs (ChatGPT, GPT-4, ...) do not _know_ anything about the
 words that they use but they're still able to concatenate them following the
 rules of language. In a way, they appear to establish connections betweek words
 not unlike how I was able to connect _salasso_ to its metaphorical meaning...
-For the entirety of human language. I'd be remiss if I didn't cite at least a
-couple of introductory articles to the world of LLM: Stephen Wolfram's 
+For the entirety of human language. For those who would like to know more about
+these models, I have found Stephen Wolfram's 
 [What is ChatGPT doing and why does it work?][3] and Confused bit's
-[How does GPT work?][2].
+[How does GPT work?][2] to be excellent entrypoints into one of the deepest
+rabbit holes I have ever found myself poking into.
 
 Our common vocabulary is ill-equipped to describe and talk about large
 language models. Words like _know_, _think_, _infer_, _hallucinate_ are
