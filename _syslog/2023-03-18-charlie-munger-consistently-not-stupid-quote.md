@@ -1,4 +1,6 @@
 ---
+title: A quote by Charlie Munger
+description: 
 ---
 
 > It is remarkable how much long-term advantage people like us have
