@@ -291,9 +291,14 @@ footer {
   }
 }
 
-.list {
 
-  .list-item {
+/* ============================================================================
+ *                                 POST LIST 
+ * ==========================================================================*/
+
+.post-list {
+
+  .post-list-item {
 
     display: flex;
     align-items: center;
@@ -307,7 +312,7 @@ footer {
       background: #ede8cb;
     }
 
-    .list-post-date {
+    .post-list-item-date {
       padding: 0; 
       margin: 0.2em 0.5em 0 0;
       flex: 0 0 6em;
@@ -326,7 +331,7 @@ footer {
 
     }
 
-    .list-post-title {
+    .post-list-item-title {
       padding: 0; 
       margin: 0;
       line-height: 1.5em;
@@ -341,11 +346,85 @@ footer {
         }
       }
     }
+    
+  }
+}
 
-    .list-post-content.syslog {
+
+/* ============================================================================
+ *                                SYSLOG LIST 
+ * ==========================================================================*/
+
+ .syslog-list {
+
+  .syslog-list-item {
+
+    position: relative;
+    margin: 0 0 1rem 0;
+    padding: 1rem 0;
+
+    &:target {
+      background: #ede8cb;
+    }
+
+    .syslog-list-item-header {
+
+      display: flex;
+      align-items: center;
+
+      .syslog-list-item-title, .syslog-list-item-date {
+        padding: 0; 
+        margin: 0;
+        font-size: 1.125em;
+        display: flex;
+        align-items: center;
+      }
+    
+      .syslog-list-item-title {
+        flex-grow: 1;
+        font-weight: 600;
+        font-size: 0.975em;
+        a {
+          // text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .syslog-list-item-date {
+        min-width: 4rem;
+        font-weight: 300;
+        font-size: .75em;
+        text-transform: uppercase;
+        text-align: right;
+        time { 
+          width: 100%; 
+        }
+      }
+
+    }
+
+    .syslog-list-item-tags {
       margin: 0;
       padding: 0;
-      font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+      list-style-type: none;
+      font-size: 0.9em;
+      font-style: italic;
+      li {
+        display: inline-block;
+        margin: 0; padding: 0;
+        &:before {
+          content: '#';
+        }
+      }
+    }
+
+    .syslog-list-item-content {
+      clear: both;
+      margin: 0;
+      padding: 0;
+      // font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
       p { 
         margin: 0.5em 0; 
       }
@@ -353,6 +432,10 @@ footer {
     
   }
 }
+
+/* ============================================================================
+ *                                  HOME ART 
+ * ==========================================================================*/
 
 img#home-art {
   display: block; 

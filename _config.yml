@@ -20,6 +20,8 @@ nav:
     href:           "/syslog.html"
     layout:         "syslog"
     rss:            "/feed-syslog.xml"
+  - name:           "Lists"
+    href:           "/lists.html"
   - name:           "About"
     href:           "/about.html"
 

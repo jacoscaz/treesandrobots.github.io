@@ -66,7 +66,7 @@ At this point, installing the `iptables-persistent` module automatically
 triggers a procedure that persists these rules across reboots (answer `yes` 
 if asked). 
 
-Finally, we restart the server with `$ shutdown -r now`.
+Finally, we restart the server with `shutdown -r now`.
 
 ## Configuring the device
 
