@@ -1,6 +1,7 @@
 ---
 title: "Simple log management by piping logs to syslog"
 description: "A simple, underestimated approach to log management"
+tags: "code"
 ---
 
 A very simple way to persist the logs of tasks run via crontab is to pipe

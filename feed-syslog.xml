@@ -12,6 +12,7 @@ layout: null
   	{% for post in posts %}
 		{% assign id = post.url | replace: '.html','' | replace: '/syslog/','' %}
 		<item>
+      <title>{{ post.title | xml_escape }}</title>
 			<description>
 				{{ post.content | xml_escape }}
 			</description>

@@ -1,6 +1,7 @@
 ---
-title: Sea of Tranquility by Emility St. John Mandel
+title: "Sea of Tranquility by Emility St. John Mandel"
 description: Book review
+tags: "books"
 ---
 
 [Sea of Tranquility][1] by [Emily St. John Mandel][2] is a glorious celebration

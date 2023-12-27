@@ -1,6 +1,7 @@
 ---
-title: Hummus, zucchini and bresaola sandwhich
+title: "Hummus, zucchini and bresaola sandwhich"
 description: Recipe for a nice, nutritious sandwhich
+tags: "cooking"
 ---
 
 Slice the zucchini lengthwise into strips and quickly sear them on high-heat.

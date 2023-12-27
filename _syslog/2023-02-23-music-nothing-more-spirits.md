@@ -1,6 +1,7 @@
 ---
 title: "Spirits by Nothing More"
 description: Review of the new album by Nothing More
+tags: "music"
 ---
 
 An Evocative mix of post-screamo, hardcore and nu metal with accents of

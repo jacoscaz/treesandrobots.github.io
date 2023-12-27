@@ -8,33 +8,27 @@ permalink: /lists/things.html
 >
 > &mdash; Chuck Palahniuk, Fight Club
 
-Taking care of our material belongings is not a trivial affair. In fact, for
-many people 
+I like to surround myself with _good_ things. Not necessarily the _best_,
+not necessarily the _most beautiful_, not necessarily the _most practical_.
+Just... _good_. A selected number of balanced compromises between aesthetics,
+functionality, practicality, durability, cost and environmental impact that I
+would be happy to suggest to those I care about and pass on to future
+generations. What follows is an on-going effort to list and keep track of some
+of these things.
 
-There's very few things I detest more than looking for a tool and either not
-finding it or, worse, finding a sub-par tool that slows me down or ruins my
-work.
-
-Even worse, I can't stand the idea of investing time and money and things that
-do not deserve such investment, 
-
-  like to surround myself with _good_ tools. Not necessarily _the best_, but
-_good_. Not necessarily the _most aesthetically pleasing_, but _nice looking_.
+Last updated on 2023-12-27.
 
 ## Computers
 
-### Laptops
-
-[Apple MacBook Pro][300]
-
-### Keyboards
-
+- Laptops
+    - [Apple MacBook Pro][300]
+- Keyboards
     - [Microsoft Sculpt][301]
 - Mice
     - [Logitech MX Master 3][302]
     - [Logitech MX Ergo][303]
 - Monitors
-    - []
+    - [Lenovo ThinkVision P27h-10][305]
 - Accessories
     - [Putorsen heavy-duty monitor arm][304]
 
@@ -43,35 +37,44 @@ _good_. Not necessarily the _most aesthetically pleasing_, but _nice looking_.
 [302]: https://www.logitech.com/en-us/products/mice/mx-master-3s.910-006556.html
 [303]: https://www.logitech.com/en-us/products/mice/mx-ergo-wireless-trackball-mouse.html
 [304]: https://www.amazon.it/gp/product/B07QGBYSVN/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
+[305]: https://www.lenovo.com/us/en/p/accessories-and-software/monitors/professional/63a1gar1us
 
 ## Hi-fi
 
-- Active Speakers
+- Integrated sound systems
     - [Q-Audio M20 HD][500]
 
 [500]: https://www.qacoustics.com/products/m20-hd-wireless-music-system
 
 ## Handy man / DYI
 
+There's very few things I detest more than looking for a tool I need and either
+not finding it or, worse, finding something sub-par that slows me down or ruins
+my work.
 
-
-- Hex Keys: [USAG 280 LTS/S9][101]
-- Electricians' Shears: [Knipex 95 05 155 SB][100]
+- Hex Keys
+    - [USAG 280 LTS/S9][101]
+- Electricians' Shears
+    - [Knipex 95 05 155 SB][100]
 
 [100]: https://www.knipex.com/products/cable-and-wire-rope-shears/electricians%27-shears/electricians-shears/9505155SB
 [101]: https://www.usag.it/catalog/en/products/details/792/280_LTS_S9/Set_of_9_long_angled_hexagon_keys_with_spherical_head
 
 ## Kitchen
 
-- Kitchen robot: [Thermomix TM6][400]. A tremendous help in reconciling the
-  cooking with the 
-tremendously
+- Kitchen robots
+    - [Thermomix TM6][400]
+- Coffee equipment
+    - [Hario Skerton Pro][401] ceramic coffee mill
+    - [Chemex Six Cup Classic][402] filter coffee maker
 
 [400]: https://www.thermomix.com/tm6/
+[401]: https://www.hario-usa.com/collections/grinders/products/ceramic-coffee-mill-skerton-pro
+[402]: https://www.chemexcoffeemaker.com/six-cup-classic-series-coffeemaker.html
 
-## Shaving
+## Personal care
 
-I find the simplicity and elegance of a double-edge safety razor very hard to
-beat. Plus, it's friendlier to the environment and to the wallet than any other
-shaving solution I've ever tried and it's one less device that needs charging.
-Started out with the King C. Gillette product line 
+- Shaving
+    - [King C. Gillette Safety Razor][600]
+
+[600]: https://gillette.com/en-us/products/beard-care/king-c-gillette-double-edge-razor
