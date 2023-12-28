@@ -54,14 +54,15 @@ decent sense of style, I also have never really cared for appearances, having
 spent most of my life with barely enough clothing items to scrounge a passable
 look when required.
 
-As most of us have come to realize in one way or another, overindulging into
-one's own proclivities is a good recipe for disaster. Furthermore, it's not as
-if I don't enjoy socialization _at all_. My ideal social context entails few,
-selected people and a shared story that binds them together; a context in which
-implicit communication and silence play as important a role to that of the
-spoken word. I am not interested in becoming a hermit, which feels like a
-miserable way to live. I also have a deep appreciation for understated style
-and elegance, though I never got around to experiment with those on myself.
+As most of us have come to realize in one way or another, however,
+overindulging into one's own proclivities is a good recipe for disaster.
+Furthermore, it's not as if I don't enjoy socialization _at all_. My ideal
+social context entails few, selected people and a shared story that binds them
+together; a context in which implicit communication and sharing a path play as
+important a role to that of the spoken word. I am not interested in becoming a
+hermit, which feels like a miserable way to live. I also have a deep
+appreciation for understated style and elegance, though I have never got around
+to experiment with those on myself.
 
 These are just some of the aspects of life that I'd like to explore in 2024.
 
