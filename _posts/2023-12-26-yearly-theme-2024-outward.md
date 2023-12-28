@@ -18,7 +18,7 @@ to orient myself towards a better work/life balance, allocating more time and
 resources to my non-working life and particularly to fitness and hobbies.
 
 Granted, I had two years to work on it, but when I look back at the last couple
-of years I feel I can unreservedly say that, for the first time since I've started
+of years I can unreservedly say that, for the first time since I've started
 thinking about yearly themes, I've done a great job.
 
 Fitness has once again become my main hobby, as it used to be years ago. 
@@ -42,29 +42,32 @@ of narrowing his focus at the expense of what I am now able to enjoy.
 ## New theme for 2024: _the year of outward_
 
 My 2024 theme is "the year of outward", a gentle nudge towards those aspects
-of existence that look outward into the world that surrounds us rather than
-inward towards one's own self.
+of existence that look outward into the world rather than inward towards one's
+own self.
 
 My yearly themes, so far, have mostly focused on _inward_ growth. For those who
 know me, this should not come as a surprise. I am, after all, a (relatively)
 introverted person who greatly prefers being alone doing my own thing, whatever
-that might be, rather than having to participate in the shallow mingling that
-characterizes many large gatherings of people. Though I like to think I have a
-decent sense of style, I also have never really cared for appearances, having
-spent most of my life with barely enough clothing items to scrounge a passable
-look when required.
+that might be, rather than participating in the shallow mingling typical of
+large gatherings of people. Though I like to think I have a decent sense of
+style, I also have never really cared for appearances, having spent most of my
+life with barely enough clothing items to scrounge a passable look when
+required.
 
-As most of us have come to realize in one way or another, however,
+However, as most of us have come to realize in one way or another,
 overindulging into one's own proclivities is a good recipe for disaster.
-Furthermore, it's not as if I don't enjoy socialization _at all_. My ideal
-social context entails few, selected people and a shared story that binds them
-together; a context in which implicit communication and sharing a path play as
-important a role to that of the spoken word. I am not interested in becoming a
-hermit, which feels like a miserable way to live. I also have a deep
-appreciation for understated style and elegance, though I have never got around
-to experiment with those on myself.
+Furthermore, it's not as if I don't enjoy socialization _at all_. I am not 
+interested in becoming a hermit, which feels like a miserable way to live.
+Where I am most at ease are social contexts with a few, selected people and
+a shared story that binds us together; contexts in which implicit communication
+and shared experiences, whether past, present or future ones, play as important
+a role as that of the spoken word. I have also come to deeply appreciate
+a specific kind of fashion which primarily focuses on well-fitting, practical,
+understated outfits that attempt at striking a more sustainable balance between
+aesthetics and durability.
 
-These are just some of the aspects of life that I'd like to explore in 2024.
+These are just some of the more _outward_ aspects of life that I'd like to
+explore in 2024.
 
 In practice, I think I'll start off by adding a social dimension to my fitness
 and musical endeavours. I've long been wanting to join a local climbing gym,
