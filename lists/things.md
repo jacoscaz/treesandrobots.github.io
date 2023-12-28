@@ -10,11 +10,12 @@ permalink: /lists/things.html
 
 I like to surround myself with _good_ things. Not necessarily the _best_,
 not necessarily the _most beautiful_, not necessarily the _most practical_.
-Just... _good_. A selected number of balanced compromises between aesthetics,
-functionality, practicality, durability, cost and environmental impact that I
-would be happy to suggest to those I care about and pass on to future
-generations. What follows is an on-going effort to list and keep track of some
-of these things.
+Just... _good_. A balanced compromise between aesthetics, functionality, 
+practicality, durability, cost and environmental impact. 
+
+What follows is an ongoing effort to list and keep track of some of these
+things. Ideally, I'd like to expand this list until it encompasses everything
+that adds significant, tangible value to my life.
 
 Last updated on 2023-12-27.
 
@@ -39,12 +40,15 @@ Last updated on 2023-12-27.
 [304]: https://www.amazon.it/gp/product/B07QGBYSVN/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
 [305]: https://www.lenovo.com/us/en/p/accessories-and-software/monitors/professional/63a1gar1us
 
-## Hi-fi
+## Media & music
 
 - Integrated sound systems
     - [Q-Audio M20 HD][500]
+- Bass gear
+    - [Darkglass Aggressively Distorting Advanced Machine][501]
 
 [500]: https://www.qacoustics.com/products/m20-hd-wireless-music-system
+[501]: https://www.darkglass.com/creation/aggressively-distorting-advanced-machine/
 
 ## Handy man / DYI
 
@@ -59,6 +63,14 @@ my work.
 
 [100]: https://www.knipex.com/products/cable-and-wire-rope-shears/electricians%27-shears/electricians-shears/9505155SB
 [101]: https://www.usag.it/catalog/en/products/details/792/280_LTS_S9/Set_of_9_long_angled_hexagon_keys_with_spherical_head
+
+## Fitness
+
+- [Pullup & Dip's outdoor pull-up and dip bar][700]
+- [Pullup & Dip's push-up bars][701]
+
+[700]: https://www.pullup-dip.com/products/pullup-dip-bar-outdoor
+[701]: https://www.pullup-dip.com/products/wooden-push-up-bars
 
 ## Kitchen
 
@@ -78,3 +90,4 @@ my work.
     - [King C. Gillette Safety Razor][600]
 
 [600]: https://gillette.com/en-us/products/beard-care/king-c-gillette-double-edge-razor
+
