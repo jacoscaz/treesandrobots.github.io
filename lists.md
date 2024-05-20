@@ -16,4 +16,4 @@ and of our own.
 These are some of my lists:
 
 - [Things](/lists/things.html)
-- [Software dependencies](/lists/software-dependencies.html)
+- [Software](/lists/software.html)
