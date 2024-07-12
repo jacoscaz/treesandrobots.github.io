@@ -1,7 +1,7 @@
 ---
 title: 'Things'
 layout: page
-permalink: /lists/things.html
+permalink: /things.html
 ---
 
 > The things you own end up owning you.
@@ -17,7 +17,7 @@ What follows is an ongoing effort to list and keep track of some of these
 things. Ideally, I'd like to expand this list until it encompasses everything
 that adds significant, tangible value to my life.
 
-Last updated on 2023-12-27.
+Last updated on 2024-07-12.
 
 ## Computers
 
@@ -77,12 +77,14 @@ my work.
 - Kitchen robots
     - [Thermomix TM6][400]
 - Coffee equipment
-    - [Hario Skerton Pro][401] ceramic coffee mill
+    - [Hario Skerton Pro][401] ceramic coffee burr
+    - [Baratza Encore][403] ceramic coffee burr
     - [Chemex Six Cup Classic][402] filter coffee maker
 
 [400]: https://www.thermomix.com/tm6/
 [401]: https://www.hario-usa.com/collections/grinders/products/ceramic-coffee-mill-skerton-pro
 [402]: https://www.chemexcoffeemaker.com/six-cup-classic-series-coffeemaker.html
+[403]: https://www.baratza.com/en-us/product/encoretm-zcg485
 
 ## Personal care
 

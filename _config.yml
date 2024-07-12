@@ -20,10 +20,12 @@ nav:
     href:           "/syslog.html"
     layout:         "syslog"
     rss:            "/feed-syslog.xml"
-  - name:           "Lists"
-    href:           "/lists.html"
   - name:           "About"
     href:           "/about.html"
+  - name:           "Now"
+    href:           "/now.html"
+  - name:           "Things"
+    href:           "/things.html"
 
 # Sass
 sass:
@@ -58,3 +60,4 @@ defaults:
 markdown: kramdown
 kramdown:
   input: GFM
+  parse_block_html: false
