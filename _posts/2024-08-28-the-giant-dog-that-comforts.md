@@ -14,12 +14,14 @@ way that is as stunningly captivating as it is intensely worrying.
 As is the case with many dogs, and rescues in particular, our dog is terrified
 of rainstorms, thunders and lightning. Whilst not being a particularly physical
 dog in the way she normally shows affection, during these events she frequently
-seeks contact with my wife and/or myself, often spending entire the night on
+seeks contact with my wife and/or myself, often spending the entire night on
 our bed, curled up against us, shivering lightly.
 
 So far, I have been lucky never to have had to confront fears so deep and
 all-encompassing such as these, fears that would literally shake me to my
 core for hours on end. Unfortunately, many others have and do every day.
+Sometimes, having no frame of reference for empathizing with others is as
+much of a luxury as it is a shame.
 
 In many ways, most dogs are unfiltered beings. Their emotional state is clearly
 and immediately reflected in their behavior, unincumbered by the complex social
@@ -39,6 +41,6 @@ crate, perhaps by the crook of my shirt if not by my neck, and snuggle around
 me, helping me shed everything that I am and letting myself fade into the storm
 that rages, safe between dirty paws and the solid warmth of a loving snout.
 
-Can we even mourn for an experience that we can never have?
+Is it even possible to mourn for an experience that we can never have?
 
 [DALL-E 3]: https://openai.com/index/dall-e-3/ 
