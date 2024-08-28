@@ -4,12 +4,12 @@ permalink: /works.html
 ---
 
 This page lists some of the works that I've been able to publish so far. Some
-of what follows was born in connection with my career as a software developer,
-some out of my own interests.
+of what follows was born in connection with my professional life as a software
+developer, some out of my own interests.
 
 <aside markdown="1">
-Curious about me? Have a look at the [now][w1] page to learn what I'm working
-on at the moment or visit the [about][w2] page for a general introduction.
+Have a look at the [now][w1] page to learn what I'm working on at the moment or
+visit the [about][w2] page for a general introduction.
 </aside>
 
 [w1]: {{ "/now.html" | prepend: site.baseurl | prepend: site.url }}
@@ -17,7 +17,7 @@ on at the moment or visit the [about][w2] page for a general introduction.
 
 ## Software libraries
 
-Over the course of my career I've witnessed time and time again the inescapable
+Over the course of the years I've witnessed time and time again the inescapable
 correlation between a project's long-term maintainability and the level of care
 that had been put in keeping it as simple, as performant and as dependency-free
 as reasonable.
