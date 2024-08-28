@@ -123,8 +123,8 @@ figure {
 }
 
 blockquote {
-  background: #f9f9f9;
-  border-left: 10px solid #ccc;
+  background: rgb(221, 238, 255);
+  border-left: 10px solid rgb(140, 203, 242);
   margin: 1.5em 0;
   padding: 0.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";
@@ -133,8 +133,8 @@ blockquote {
 }
 
 aside {
-  background: #f9f9f9;
-  border-left: 10px solid #ccc;
+  background: rgb(233, 251, 233);
+  border-left: 10px solid rgb(82, 224, 82);
   margin: 1.5em 0;
   padding: 0.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";
@@ -168,6 +168,25 @@ tbody tr:nth-child(odd) th {
 body {
   overflow-y: scroll;
   overflow-x: hidden;
+}
+
+details {
+  background: rgb(252, 250, 238);
+  border-left: 10px solid rgb(224, 203, 82);
+  margin: 1.5em 0;
+  padding: 0.5em 10px;
+  quotes: "“" "”" "‘" "’";
+  font-size: 0.9em;
+  letter-spacing: 0.0125em;
+  position: relative;
+  & > summary {
+    cursor: pointer;
+    font-style: italic;
+    text-decoration: underline;
+    &:after {
+      content: '...';
+    }
+  }
 }
 
 // ----------------------------------------------

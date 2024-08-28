@@ -17,7 +17,7 @@ What follows is an ongoing effort to list and keep track of some of these
 things. Ideally, I'd like to expand this list until it encompasses everything
 that adds significant, tangible value to my life.
 
-Last updated on 2024-07-12.
+Last updated on 2024-08-27.
 
 ## Computers
 
@@ -93,3 +93,11 @@ my work.
 
 [600]: https://gillette.com/en-us/products/beard-care/king-c-gillette-double-edge-razor
 
+## Outdoor gear
+
+- [Ridge Outdoor Gear Lay-flat Pinnacle 360 Hammock][700] (from archive.org)
+  - Unfortunately their website seems to have disappeared from the internet.
+    Their [facebook page][701] hasn't been updated in a few years.
+
+[700]: https://web.archive.org/web/20220519054956/https://www.ridgeoutdoorgear.com/product/lay-flat-hammock-blue/
+[701]: https://www.facebook.com/ridgeoutdoorgear/

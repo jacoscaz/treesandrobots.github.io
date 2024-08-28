@@ -7,6 +7,11 @@ permalink: /about.html
 Hi, I'm Jacopo. Welcome to Trees and Robots, my personal blog.
 </p>
 
+<aside markdown="1">
+Have a look at the [now][8] page to learn what I'm working on at the moment
+or visit the [works][9] page for a list of past and current endeavors.
+</aside>
+
 I'm a self-employed software developer focusing on platforms for the Internet
 of Things, smart buildings, electric mobility, the energy and climate sectors.
 I help my clients bring their ideas to life, sometimes as a consultant and 
@@ -21,24 +26,6 @@ company once more, this time focused on a product or service.
 
 On the internet I mostly go by as **jacoscaz**. You can reach me on [GitHub][4]
 or via [e-mail][5].
-
-## Open-source
-
-Some of the projects that I've released so far:
-
-- [`quadstore`](https://www.npmjs.com/package/quadstore), an isomorphic,
-  embedded RDF graph database for both browser-side and server-side runtimes
-- [`typed-ocpp`](https://www.npmjs.com/package/typed-ocpp):
-  serialization and validation of OCPP messages (OCPP 1.6-J and OCPP 2.0.1-J)
-- [`pinetto`](https://www.npmjs.com/package/pinetto):
-  plain-text logger
-- [`failerr`](https://www.npmjs.com/package/failerr):
-  type-safe handling of expected failure conditions through
-  standard control flow
-- [`loopyloop`](https://www.npmjs.com/package/loopyloop):
-  infinite loops of async functions
-- [`instant-relay`](https://www.npmjs.com/package/instant-relay):
-  intra-process asynchronous communication with backpressure management
 
 ## Colophon
 
@@ -60,3 +47,5 @@ permitted by fair use policies ([US][6], [EU][7]).
 [5]: mailto:jacopo@scazzosi.com
 [6]: https://www.copyright.gov/fair-use/more-info.html
 [7]: https://www.europarl.europa.eu/doceo/document/A-6-2007-0073_EN.html
+[8]: {{ "/now.html" | prepend: site.baseurl | prepend: site.url }}
+[9]: {{ "/works.html" | prepend: site.baseurl | prepend: site.url }}
