@@ -42,7 +42,7 @@ I'm currently working on:
   away from our mobile devices.
 - Developing a daily, sustainable, low-equipment [strength training] routine
   and incorporating more movement into my life ([sport climbing], [bouldering]
-  and perhaps tennis). You can [see my routine on GitHub][routine].
+  and perhaps tennis). Interested? [Check it out!][routine].
 </details>
 
 Looking ahead I'd like to learn the basics of investing, approaching it through
@@ -64,4 +64,4 @@ the lens of long-term financial security and independence.
 [TSO]: https://en.wikipedia.org/wiki/Transmission_system_operator
 [DSO]: https://en.wikipedia.org/wiki/Distribution_network_operator
 [electricity producer]: https://en.wikipedia.org/wiki/Electricity_generation
-[routine]: https://github.com/jacoscaz/jaco-s-daily-fitness-routine
+[routine]: {{ "/fitness.html" | prepend: site.baseurl | prepend: site.url }}

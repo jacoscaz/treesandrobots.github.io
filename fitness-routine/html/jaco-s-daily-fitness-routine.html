@@ -1,0 +1,356 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../vendor/normalize-8.0.1.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../vendor/paper-0.4.1.min.css" integrity="sha512-V+r0ugxPpGraMA2ubEWvqpfcZZAfMAbnSDPeu/6gYFfdxlgJGfCuNTNrZkrjQ0sJBoySdN6uoTVwJ+4P/BeTkg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+
+      /* ========================== Generic styles ========================= */
+
+      body {
+        font-size: 0.85em;
+        font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+      }
+
+      a, a:hover, a:visited {
+        text-decoration: underline;
+        color: #000;
+      }
+
+      ul {
+        padding-left: 1em;
+      }
+
+      h1 {
+        margin: 0;
+        margin-block-start: 0;
+        margin-block-end: 0;
+      }
+
+      p, ul, table, dl {
+        margin: 1em 0;
+      }
+
+      section {
+        padding: 0.25em;
+        word-wrap: normal;
+      }
+
+      /* ============================== Layout ============================= */
+
+      .sheet {
+        display: grid;
+        padding: 2em;
+        grid-template-columns: repeat(6, 1fr);
+        grid-auto-rows: max-content;
+        box-shadow: none;
+        margin: 0 auto;
+      }
+
+      /* ============================ Text styles ========================== */
+
+      header > h1 { 
+        font-size: 1.75em;
+      }
+      
+      section > h1 {
+        font-size: 1.25em;
+      }
+
+      .details {
+        font-size: 0.75em;
+        font-style: italic;
+      }
+
+      .alternative {
+        /* font-style: italic; */
+        font-weight: bold;
+        font-size: 0.6em;
+      }
+
+      .alternative::before, .alternative::after {
+        content: ' \2014 ';
+      }
+
+      /* ========================= Header metadata ========================= */
+
+      dl#meta {
+        text-align: left;
+      }
+
+      dl#meta > * {
+        text-align: left;
+        display: inline;
+        margin-inline: 0;
+      }
+
+      dl#meta > dt {
+        text-align: left;
+        display: inline;
+        margin-inline: 0;
+      }
+
+      dl#meta > dt::before {
+        content: " \2022 ";
+        margin: 0 0.25em;
+      }
+
+      dl#meta > dt::after {
+        content: ": ";
+      }
+
+      dl#meta > dt:first-child::before {
+        content: '';
+        margin: 0;
+      }
+
+      /* ====================== Weekly schedule table  ===================== */
+
+      table#sc-schedule {
+        width: 100%; 
+        text-align: center; 
+        border-collapse: collapse;
+        table-layout: fixed;
+        /* border-spacing: 0.5em 0.25em; */
+      }
+
+      table#sc-schedule, table#sc-schedule th, table#sc-schedule td {
+        border: 1px solid black;
+      }
+
+      table#sc-schedule thead {
+        background: #ddd;
+      }
+
+      table#sc-schedule th {
+        font-style: italic;
+      }
+
+      table#sc-schedule th, table#sc-schedule td {
+        vertical-align: middle;
+        padding: 0.25em;
+      }
+    </style>
+  </head>
+  <body class="A4">
+    <div class="sheet">
+      <header style="grid-column: span 6; grid-row: 1;">
+        <h1>Jaco's daily fitness routine</h1>
+        <dl id="meta">
+          <dt>Revision</dt><dd>2024-10-09</dd>
+          <dt>License</dt>
+          <dd>
+            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>
+          </dd>
+          <dt>Author</dt>
+          <dd>
+            &copy 2024 <a href="https://treesandrobots.com">Jacopo Scazzosi</a>
+          </dd>
+          <dt>Website</dt>
+          <dd>
+            <a href="https://treesandrobots.com/fitness.html">
+              https://treesandrobots.com/fitness.html
+            </a>
+          </dd>
+        </dl>
+      </header>
+      <section style="grid-column: span 6; grid-row: 2;">
+        <h1>Strength</h1>
+        <table id="sc-schedule">
+          <thead>
+            <th>Mon <span class="details">(push)</span></th>
+            <th>Tue <span class="details">(pull)</span></th>
+            <th>Wed <span class="details">(func)</span></th>
+            <th>Thu <span class="details">(push)</span></th>
+            <th>Fri <span class="details">(pull)</span></th>
+            <th>Sat <span class="details">(func)</span></th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                Push-up
+                <br /><span class="details">(standard, diamond, 1 arm to the side,  planche, wide/narrow grip)</span>
+              </td>
+              <td>
+                Inverted row
+                <br /><span class="details">(1-arm, side-to-side, wide/narrow grip, front lever)</span>
+              </td>
+              <td rowspan="3">
+                Full body
+                <br /><span class="details">(loaded carry, farmer's walk, suitcase carry, zercher walk, bear hug, overhead carry, kettlebell swing, sandbag halo, clean &amp; press, muscle up)</span>
+              </td>
+              <td>
+                Dip
+                <br /><span class="details">(L-sit, korean, dip-to-leg-raise, on rings)</span>
+              </td>
+              <td>
+                Pull-up
+                <br /><span class="details">(1-arm, archer, L-sit, on rings, wide/narrow grip)</span>
+              </td>
+              <td rowspan="3">
+                Full body
+                <br /><span class="details">(loaded carry, farmer's walk, suitcase carry, zercher walk, bear hug, overhead carry, kettlebell swing, sandbag halo, clean &amp; press, muscle up)</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <br />Vertical press
+                <br /><span class="details">(shoulder press, kettlebell, pike / elevated / wall / freestanding HSPU)</span>
+              </td>
+              <td rowspan="2">
+                Low lift
+                <br /><span class="details">(deadlift, romanian deadlift)</span>
+              </td>
+              <td>
+                Horizontal press
+                <br /><span class="details">(floor press, kettlebell, push-up)</span>
+              </td>
+              <td rowspan="2">
+                High lift
+                <br /><span class="details">(shoulder lift, SDHP, clean, row)</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Squat
+                <br /><span class="details">(pistols, overhead, side-to-side, &hellip;)</span>
+              </td>
+              <td>
+                Lunge
+                <br /><span class="details">(with rotation, reverse, overhead)</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <ul>
+          <li>
+            Do 2 -3 hard sets per type of movement with as many reps as it
+            takes to get to 1 - 2 RIR (Reps In Reserve), last set to 0 RIR.
+            Select movements, weights, variations and intensity that allow
+            for 5 - 20 reps. Perform controlled, deliberate movements,
+            maximizing time under tension and minimizing inertia. Pause at
+            both the &OpenCurlyDoubleQuote;bottom&CloseCurlyDoubleQuote; and
+            &OpenCurlyDoubleQuote;top&CloseCurlyDoubleQuote; positions. Faster
+            concentric, slower eccentric.
+          </li>
+          <li>
+            Perform all movements to the fullest extent of their range, i.e.
+            <strong>full ROM</strong>, stopping just short of joint lock
+            and/or any significant decrease in muscle tension, particularly 
+            when in the resting position. A <em>full ROM</em> pull-up is not
+            the same thing as a <em>dead hang</em> pull-up. Prefer variations
+            that allow for joint rotation throughout the movement, such as ring
+            variations. Exceedingly wide or narrow grips may hurt your elbows.
+          </li>
+          <li>
+            Practice and warm up to each movement. Keep track of your center of
+            gravity as it moves across the body. Pay attention to where it
+            lands within your feet and hands. Watch out for imbalances. Focus
+            on posture, shoulders and shoulder blades. Reset posture during
+            warmup by pinching an imaginary sheet of paper between your shoulder
+            blades. End each workout with a few stretches and mobility exercises.
+          </li>
+          <li>
+            <strong>Technique failure is still failure.</strong>
+          </li>
+        </ul>
+      </section>
+      <div style="grid-column: span 2; grid-row: 3;">
+        <section>
+          <h1>Notes</h1>
+          <ul>
+            <li>Occasionally eat within an 8hr window <span class="details">(time-constrained eating)</span></li>
+            <li>Get plenty of sunlight,  sleep, water</li>
+            <li>Cold exposure <span class="details">(cold showers, cold baths)</span></li>
+            <li>Be spontaneous, stretch often, focus on breathing</li>
+          </ul>
+        </section>
+        <section>
+          <h1>Weekly schedule</h1>
+          <ul>
+            <li>6 strength workouts <span class="details">(mon - sat)</span></li>
+            <li>2 core and stretch sessions <span class="details">(whenever)</span></li>
+            <li>1 sprinting or HIIT session</li>
+            <li>2 to 5 hr of low-intensity exercise <span class="details">(walk, play, trek, bike, skate, ...)</span></li>
+          </ul>
+        </section>
+        <section>
+          <h1>Hip and shoulder work</h1>
+          <p>Practice regularly, on its own and/or as a part of warming up</p>
+          <ul>
+            <li>Handstand and manna <span class="details">(L-sit, V-sit, &hellip;)</span></li>
+            <li>Active <span class="details">(hollow)</span> and passive hanging</li>
+            <li>Grok squats <span class="details">(w/ arm reach)</span></li>
+            <li>Back bridge</li>
+            <li>Floor culture</li>
+          </ul>
+        </section>
+      </div>
+      <div style="grid-column: span 2; grid-row: 3;">
+        <section>
+          <h1>Core movements</h1>
+          <ul>
+            <li>Sit <span class="details">(situp, N-sit, L-Sit, V-sit, manna, knee scissors)</span></li>
+            <li>Crunch <span class="details">(side, tabletop, toe reach, cross toe reach, knee-to-elbow)</span></li>
+            <li>Pike <span class="details">(full, straddle, kicks, compressions)</span></li>
+            <li>Plank <span class="details">(front, side, side with rotations, reverse plank)</span></li>
+            <li>Leg raise <span class="details">(hanging, floor)</span></li>
+            <li>Core hinging <span class="details">(ab rollout, inch worm)</span></li>
+            <li>Anti-rotational <span class="details">(side-to-side plank pull, side-to-side plank push)</span></li>
+            <li>Back Bridge</li>
+            <li>Back extension <span class="details">(superman, 4-point alt. kneel. leg & arm extensions, fitball)</span></li>
+            <li>Flags</li>
+          </ul>
+        </section>
+        <section>
+          <h1>Morning movements</h1>
+          <ul>
+            <li>Standing side bend</li>
+            <li>Wide leg spinal twist</li>
+            <li>Forearm plank</li>
+          </ul>
+        </section>
+        <section>
+          <h1>Evening movements</h1>
+          <ul>
+            <li>Happy baby</li>
+            <li>Spinal twist shoulder opener</li>
+            <li>Assisted plow pose</li>
+          </ul>
+        </section>
+
+      </div>
+      <div style="grid-column: span 2; grid-row: 3;">
+        <section>
+          <h1>Floor culture</h1>
+          <ul>
+            <li>Easy pose <span class="details">(Sukhasana)</span></li>
+            <li>90/90 pose</li>
+            <li>Kneeling / toe sit</li>
+            <li>Straddle</li>
+            <li>Sphinx</li>
+            <li>On the side</li>
+          </ul>
+        </section>
+        <section>
+          <h1>HIIT movements</h1>
+          <ul>
+            <li>Get-up <span class="details">(turkish)</span></li>
+            <li>Bear crawl <span class="details">(no knees)</span></li>
+            <li>Plank roll</li>
+            <li>Burpee <span class="details">(jumping, pull-up)</span></li>
+            <li>Mountain climber <span class="details">(outside hand)</span></li>
+            <li>Jumping jack</li>
+            <li>Plank jack</li>
+            <li>High knee</li>
+            <li>Box jump</li>
+            <li>Jumping lunge</li>
+            <li>Side-plank knee-to-elbow</li>
+            <li>Crab walk</li>
+            <li>Crab toe tap </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

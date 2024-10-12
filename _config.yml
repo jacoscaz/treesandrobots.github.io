@@ -28,6 +28,8 @@ nav:
     href:           "/works.html"
   - name:           "Things"
     href:           "/things.html"
+  - name:           "Fitness"
+    href:           "/fitness.html"
 
 # Sass
 sass:
