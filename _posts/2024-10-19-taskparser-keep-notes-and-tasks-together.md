@@ -1,10 +1,10 @@
 ---
-title: "taskninja: keep notes and tasks together"
+title: "taskparser: keep notes and tasks together"
 description: ""
 ---
 
 <aside markdown="1">
-This post explains the rationale behind [taskninja], a CLI productivity tool
+This post explains the rationale behind [taskparser], a CLI productivity tool
 to extract tasks out of multiple Markdown documents and render them in tabular
 or CSV format.
 </aside>
@@ -14,7 +14,7 @@ that I personally interact with, appear to be content with keeping notes and
 tasks within separate apps:
 
 <figure>
-<img src="{{ '/images/taskninja-1.png' | prepend: site.baseurl | prepend: site.url }}" height=500>
+<img src="{{ '/images/taskparser-1.png' | prepend: site.baseurl | prepend: site.url }}" height=500>
 <figcaption markdown="1"></figcaption>
 </figure>
 
@@ -36,7 +36,7 @@ free-form writing, so that each task is literally surrounded by the context in
 which it originated:
 
 <figure>
-<img src="{{ '/images/taskninja-2.png' | prepend: site.baseurl | prepend: site.url }}" height=500>
+<img src="{{ '/images/taskparser-2.png' | prepend: site.baseurl | prepend: site.url }}" height=500>
 <figcaption markdown="1"></figcaption>
 </figure>
 
@@ -65,18 +65,18 @@ of both worlds in a manner that is developer friendly, lightweight, extensible
 and doesn't require an internet connection nor sharing our tasks with someone
 else?
 
-Enters [taskninja], a CLI tool that extracts tasks out of multiple Markdown
+Enters [taskparser], a CLI tool that extracts tasks out of multiple Markdown
 documents and renders them in tabular or CSV form, supporting filtering and
 sorting through a tag-based approach that derives metadata from both inline
 tags and structured [front matter].
 
 <figure>
-<img src="{{ '/images/taskninja-3.png' | prepend: site.baseurl | prepend: site.url }}" height=500>
+<img src="{{ '/images/taskparser-3.png' | prepend: site.baseurl | prepend: site.url }}" height=500>
 <figcaption markdown="1"></figcaption>
 </figure>
 
 Borrowing a term from the world of programming language compilers, I'd say that
-[taskninja] is a fully-[bootstrapped] task-management tool in that it's already
+[taskparser] is a fully-[bootstrapped] task-management tool in that it's already
 capable enough to be usable for managing its own development. Moreover, in the
 last few weeks I've been moving more and more of my task management to it,
 [dogfooding] as much as possible.
@@ -85,9 +85,9 @@ Though it's still early-days, alpha-quality software, I hope that others will
 find it interesting enough to test out; feedback on real-life usage by others
 would be invaluable in shaping its evolution.
 
-Interested? [Check it out!][taskninja]
+Interested? [Check it out!][taskparser]
 
-[taskninja]: https://github.com/jacoscaz/taskninja
+[taskparser]: https://github.com/jacoscaz/taskparser
 [front matter]: https://jekyllrb.com/docs/front-matter/
 [bootstrapped]: https://en.wikipedia.org/wiki/Bootstrapping
 [dogfooding]: https://en.wikipedia.org/wiki/Eating_your_own_dog_food
