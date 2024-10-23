@@ -62,73 +62,71 @@
         font-style: italic;
       }
 
-      .alternative {
-        /* font-style: italic; */
-        font-weight: bold;
-        font-size: 0.6em;
-      }
-
-      .alternative::before, .alternative::after {
-        content: ' \2014 ';
-      }
-
       /* ========================= Header metadata ========================= */
 
       dl#meta {
         text-align: left;
       }
 
-      dl#meta > * {
+      dl#meta > di > * {
         text-align: left;
         display: inline;
         margin-inline: 0;
       }
 
-      dl#meta > dt {
-        text-align: left;
-        display: inline;
-        margin-inline: 0;
+      dl#meta > di {
+        display: inline-block;
+        word-wrap: none;
       }
 
-      dl#meta > dt::before {
-        content: " \2022 ";
-        margin: 0 0.25em;
-      }
-
-      dl#meta > dt::after {
-        content: ": ";
-      }
-
-      dl#meta > dt:first-child::before {
+      dl#meta > di:first-child::before {
         content: '';
         margin: 0;
       }
 
+      dl#meta > di::before {
+        content: " | ";
+        margin: 0 0.25em;
+      }
+
+      dl#meta > di > dt {
+        text-align: left;
+        display: inline;
+        margin-inline: 0;
+        display: none;
+      }
+
+      dl#meta > di > dt::after {
+        content: ": ";
+      }
+
       /* ====================== Weekly schedule table  ===================== */
 
-      table#sc-schedule {
-        width: 100%; 
-        text-align: center; 
-        border-collapse: collapse;
-        table-layout: fixed;
-        /* border-spacing: 0.5em 0.25em; */
+      #sc-grid {
+        display: grid; 
+        grid-gap: 1px;
+        grid-template-columns: repeat(6, 6fr);
+        margin: 0.5em 0;
       }
 
-      table#sc-schedule, table#sc-schedule th, table#sc-schedule td {
-        border: 1px solid black;
+      #sc-grid > div {
+        padding: 0.15em;
+        box-shadow: 0 0 0 1px black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
       }
 
-      table#sc-schedule thead {
+      #sc-grid > .sc-grid-header {
         background: #ddd;
+        font-weight: bold;
       }
 
-      table#sc-schedule th {
-        font-style: italic;
-      }
-
-      table#sc-schedule th, table#sc-schedule td {
-        vertical-align: middle;
-        padding: 0.25em;
+      #sc-grid p {
+        margin: 0.15em 0;
+        padding: 0;
+        text-align: center;
       }
     </style>
   </head>
@@ -137,91 +135,116 @@
       <header style="grid-column: span 6; grid-row: 1;">
         <h1>Jaco's daily fitness routine</h1>
         <dl id="meta">
-          <dt>Revision</dt><dd>20241017</dd>
-          <dt>License</dt>
-          <dd>
-            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>
-          </dd>
-          <dt>Author</dt>
-          <dd>
-            &copy 2024 <a href="https://treesandrobots.com">Jacopo Scazzosi</a>
-          </dd>
-          <dt>Website</dt>
-          <dd>
-            <a href="https://treesandrobots.com/fitness.html">
-              https://treesandrobots.com/fitness.html
-            </a>
-          </dd>
+          <di>
+            <dt>Revision</dt>
+            <dd>20241017</dd>
+          </di>
+          <di>
+            <dt>License</dt>
+            <dd><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></dd>
+          </di>
+          <di>
+            <dt>Author</dt>
+            <dd>&copy 2024 <a href="https://treesandrobots.com">Jacopo Scazzosi</a></dd>
+          </di>
+          <di>
+            <dt>Website</dt>
+            <dd><a href="https://treesandrobots.com/fitness.html">https://treesandrobots.com/fitness.html</a></dd>
+          </di>
         </dl>
       </header>
       <section style="grid-column: span 6; grid-row: 2;">
         <h1>Strength</h1>
-        <table id="sc-schedule">
-          <thead>
-            <th>Mon <span class="details">(push)</span></th>
-            <th>Tue <span class="details">(pull)</span></th>
-            <th>Wed <span class="details">(func)</span></th>
-            <th>Thu <span class="details">(push)</span></th>
-            <th>Fri <span class="details">(pull)</span></th>
-            <th>Sat <span class="details">(func)</span></th>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                Push-up
-                <br /><span class="details">(standard, diamond, 1 arm to the side,  planche, wide/narrow grip)</span>
-              </td>
-              <td>
-                Inverted row
-                <br /><span class="details">(1-arm, side-to-side, wide/narrow grip, front lever, on rings, underhand)</span>
-              </td>
-              <td rowspan="3">
-                Core, Holds<br/>&amp; Stretch
-                <br/><span class="details">(see "core movements")</span>
-              </td>
-              <td>
-                Dip
-                <br /><span class="details">(L-sit, korean, dip-to-leg-raise, on rings)</span>
-              </td>
-              <td>
-                Pull-up
-                <br /><span class="details">(1-arm, archer, L-sit, on rings, wide/narrow grip, underhand/chin-up)</span>
-              </td>
-              <td rowspan="3">
-                Full body
-                <br /><span class="details">(loaded carry, farmer's walk, suitcase carry, zercher walk, bear hug, overhead carry, kettlebell swing, sandbag halo, clean &amp; press, muscle up, back lever)</span>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <br />Vertical press
-                <br /><span class="details">(shoulder press, kettlebell, pike / elevated / wall / freestanding HSPU)</span>
-              </td>
-              <td rowspan="2">
-                Low lift
-                <br /><span class="details">(deadlift, romanian deadlift)</span>
-              </td>
-              <td>
-                Horizontal press
-                <br /><span class="details">(floor press, kettlebell, push-up)</span>
-              </td>
-              <td rowspan="2">
-                High lift
-                <br /><span class="details">(shoulder lift, SDHP, clean, row)</span>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                Squat
-                <br /><span class="details">(pistols, overhead, side-to-side, &hellip;)</span>
-              </td>
-              <td>
-                Lunge
-                <br /><span class="details">(with rotation, reverse, overhead)</span>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+        <div id="sc-grid">
+          <!-- 
+            -- monday
+            -->
+          <div class="sc-grid-header" style="grid-column: 1; grid-row-start: 1; grid-row-end: span 1;">
+            <p>Mon <span class="details">(push)</span></p>
+          </div>
+          <div style="grid-column: 1; grid-row-start: 2; grid-row-end: span 2;">
+            <p>Push-up</p>
+            <p class="details">(standard, diamond, 1 arm to the side,  planche, wide/narrow grip)</p>
+          </div>
+          <div style="grid-column: 1; grid-row-start: 4; grid-row-end: span 2;">
+            <p>Vertical press</p>
+            <p class="details">(shoulder press, kettlebell, pike / elevated / wall / freestanding HSPU)</p>
+          </div>
+          <div style="grid-column: 1; grid-row-start: 6; grid-row-end: span 2;">
+            <p>Squat</p>
+            <p class="details">(pistols, overhead, side-to-side, &hellip;)</p>
+          </div>
+          <!-- 
+            -- tuesday
+            -->
+          <div class="sc-grid-header" style="grid-column: 2; grid-row-start: 1; grid-row-end: span 1;">
+            <p>Tue <span class="details">(pull)</span></p>
+          </div>
+          <div style="grid-column: 2; grid-row-start: 2; grid-row-end: span 2;">
+            <p>Inverted row</p>
+            <p class="details">(1-arm, side-to-side, wide/narrow grip, front lever, on rings, underhand)</p>
+          </div>
+          <div style="grid-column: 2; grid-row-start: 4; grid-row-end: span 2;">
+            <p>Chin-up</p>
+            <p class="details">(1-arm, on rings)</p>
+          </div>
+          <div style="grid-column: 2; grid-row-start: 6; grid-row-end: span 2;">
+            <p>Low lift</p>
+            <p class="details">(deadlift, romanian deadlift)</p>
+          </div>
+          <!-- 
+            -- wednesday
+            -->
+          <div class="sc-grid-header" style="grid-column: 3; grid-row-start: 1; grid-row-end: span 1;">
+            <p>Wed <span class="details">(core)</span></p>
+          </div>
+          <div style="grid-column: 3; grid-row-start: 2; grid-row-end: span 6;">
+            <p>Core, Holds<br/>&amp; Stretch</p>
+            <p class="details">(see "core movements")</p>
+          </div>
+          <!-- 
+            -- thursday
+            -->
+          <div class="sc-grid-header" style="grid-column: 4; grid-row-start: 1; grid-row-end: span 1;">
+            <p>Thu <span class="details">(push)</span></p>
+          </div>
+          <div style="grid-column: 4; grid-row-start: 2; grid-row-end: span 2;">
+            <p>Dip</p>
+            <p class="details">(L-sit, korean, dip-to-leg-raise, on rings)</p>
+          </div>
+          <div style="grid-column: 4; grid-row-start: 4; grid-row-end: span 2;">
+            <p>Horizontal press</p>
+            <p class="details">(floor press, kettlebell, push-up)</p>
+          </div>
+          <div style="grid-column: 4; grid-row-start: 6; grid-row-end: span 2;">
+            <p>Lunge</p>
+            <p class="details">(with rotation, reverse, overhead)</p>
+          </div>
+          <!-- 
+            -- friday
+            -->
+          <div class="sc-grid-header" style="grid-column: 5; grid-row-start: 1; grid-row-end: span 1;">
+            <p>Fri <span class="details">(pull)</span></p>
+          </div>
+          <div style="grid-column: 5; grid-row-start: 2; grid-row-end: span 4;">
+            <p>Pull-up</p>
+            <p class="details">(1-arm, archer, L-sit, on rings, wide/narrow grip)</p>
+          </div>
+          <div style="grid-column: 5; grid-row-start: 6; grid-row-end: span 2;">
+            <p>High lift</p>
+            <p class="details">(shoulder lift, SDHP, clean, row)</p>
+          </div>
+          <!-- 
+            -- saturday
+            -->
+          <div class="sc-grid-header" style="grid-column: 6; grid-row-start: 1; grid-row-end: span 1;">
+            <p>Sat <span class="details">(func)</span></p>
+          </div>
+          <div style="grid-column: 6; grid-row-start: 2; grid-row-end: span 6;">
+            <p>Full body</p>
+            <p class="details">(loaded carry, farmer's walk, suitcase carry, zercher walk, bear hug, overhead carry, kettlebell swing, sandbag halo, clean &amp; press, muscle up, back lever)</p>
+          </div>
+        </div>
         <ul>
           <li>
             Do 2 -3 hard sets per type of movement with as many reps as it
@@ -263,13 +286,13 @@
             <li>Get plenty of sunlight,  sleep, water</li>
             <li>Cold exposure <span class="details">(cold showers, cold baths)</span></li>
             <li>Be spontaneous, stretch often, focus on breathing</li>
+            <li>Stretch regularly <span class="details">(passive, active, static, dynamic, isometric)</span></li>
           </ul>
         </section>
         <section>
           <h1>Weekly schedule</h1>
           <ul>
             <li>6 strength workouts <span class="details">(mon - sat)</span></li>
-            <li>2 core and stretch sessions <span class="details">(whenever)</span></li>
             <li>1 sprinting or HIIT session</li>
             <li>2 to 5 hr of low-intensity exercise <span class="details">(walk, play, trek, bike, skate, ...)</span></li>
           </ul>
