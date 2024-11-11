@@ -52,7 +52,7 @@ The routine lives as a printer-friendly, evolving [HTML document][r4] which
 is also available [in .PDF form][r5].
 
 [r4]: ./fitness-routine/html/jaco-s-daily-fitness-routine.html
-[r5]: ./fitness-routine/pdfs/jaco-s-daily-fitness-routine-20241105.pdf
+[r5]: ./fitness-routine/pdfs/jaco-s-daily-fitness-routine-2024-11-11.pdf
 
 ## Equipment
 
