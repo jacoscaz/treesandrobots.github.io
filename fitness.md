@@ -4,6 +4,10 @@ layout: page
 permalink: /fitness.html
 ---
 
+<aside markdown="1">
+Last updated on <time datetime="2024-08-28">2024-11-16</time>.
+</aside>
+
 ## Intro
 
 I've been developing and [dogfooding][i1] my own fitness routine for a number
@@ -41,18 +45,18 @@ fitness professionals before making changes to your fitness regime.
    maximizing weekly variety to lessen its impact on joints, ligaments and 
    allow for shorter recovery times.
 4. **Portable**: this routine is designed to be relatively portable, minimizing
-   the amount of required equipment and optimizing for equipment that is most 
-   commonly available.
+   the amount of required equipment and optimizing for equipment that easy to 
+   carry around and craft.
 
 [g1]: https://journal.crossfit.com/article/what-is-fitness
 
 ## The routine
 
-The routine lives as a printer-friendly, evolving [HTML document][r4] which
-is also available [in .PDF form][r5].
+The routine lives as a printer-friendly, evolving [HTML document][r4]. Previous
+versions are linked in the [Changelog](#changelog) section below.
 
 [r4]: ./fitness-routine/html/jaco-s-daily-fitness-routine.html
-[r5]: ./fitness-routine/pdfs/jaco-s-daily-fitness-routine-2024-11-11.pdf
+
 
 ## Equipment
 
@@ -70,8 +74,8 @@ or all of the following equipment definitely helps:
 - A **dumbell weight set**.
 - A **set of kettlebells**. Alternatively, kettlebell handles
   [for weight plates][e1] and/or [for dumbells][e2] can suffice.
-- A **sandbag** with a set of filler bags of various weight. Best for squats,
-  lifts and weighted exercises requiring heavier weights. Tip: use [pea gravel][e3] rather than sand. 
+- **sandbags** Best for squats, lifts and weighted exercises requiring heavier
+  weights. Tip: use [pea gravel][e3] rather than sand.
 - A **jump rope**. Good for warming up.
 - A **rowing machine**. A very nice and versatile piece of equipment, ideal for
   warming up and slow days in which I do not feel like working out.
@@ -93,3 +97,17 @@ license, I take no responsibility for any outcome arising from or in connection
 with the use of this routine.
 
 [lb1]: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode#s5
+
+## Changelog
+
+### [2024-11-16](./fitness-routine/html/jaco-s-daily-fitness-routine-2024-11-16.html)
+
+- Replaced thursday's horizontal pressing with push-up variations. Once greater
+  stabilization requirements are brought in through specific variations I find
+  push-up to be an overall superior, more complete exercise. See variations with
+  either hands and/or feet on rings, raised legs, &hellip;
+- Dropped handstand push-up from monday's vertical pressing due to the limited 
+  ROM, particularly in the absence of handles, parallettes and so on.
+- Greater structure to saturday's exercies with a focus on weights, given that
+  the past week felt a little too biased towards control of the body and not of
+  external objects.
