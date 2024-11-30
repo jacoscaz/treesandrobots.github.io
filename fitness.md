@@ -5,7 +5,7 @@ permalink: /fitness.html
 ---
 
 <aside markdown="1">
-Last updated on <time datetime="2024-08-28">2024-11-16</time>.
+Last updated on <time datetime="2024-11-30">2024-11-30</time>.
 </aside>
 
 ## Intro
@@ -28,13 +28,20 @@ fitness professionals before making changes to your fitness regime.
 [i2]: #license
 [i3]: #liability
 
+## The routine
+
+The routine lives as a printer-friendly, evolving [HTML document][r4]. Previous
+versions are linked in the [Changelog](#changelog) section below.
+
+[r4]: ./fitness-routine/html/jaco-s-daily-fitness-routine.html
+
 ## Goals
 
 > [...] fitness is about performing well at any and every task imaginable.
 >
 > &mdash; [CrossFit Journal][g1]
 
-1. **Day to day**: this routine is designed for people that, like me, have an
+1. **Daily**: this routine is designed for people that, like me, have an
    easier time committing to smaller daily efforts rather than greater weekly
    ones.
 2. **Generalist**: this routine is designed to develop general fitness levels.
@@ -46,45 +53,58 @@ fitness professionals before making changes to your fitness regime.
    allow for shorter recovery times.
 4. **Portable**: this routine is designed to be relatively portable, minimizing
    the amount of required equipment and optimizing for equipment that easy to 
-   carry around and craft.
+   carry around and [DIY][g3].
+5. **Safe**: this routine is designed around weight types with greater
+   stabilization requirements, intentionally limiting the amount of weight that
+   the trainee will be able to move relative to their [1 RM][g2] with more
+   stable and balanced loads. This routine is also designed to minimize the
+   risk of injury and/or damage inherent in handling heavy weights, selecting
+   movement variations that can be easily aborted and weight types that can be
+   easily and quickly discarded.
 
 [g1]: https://journal.crossfit.com/article/what-is-fitness
-
-## The routine
-
-The routine lives as a printer-friendly, evolving [HTML document][r4]. Previous
-versions are linked in the [Changelog](#changelog) section below.
-
-[r4]: ./fitness-routine/html/jaco-s-daily-fitness-routine.html
+[g2]: https://en.wikipedia.org/wiki/One-repetition_maximum
+[g3]: https://en.wikipedia.org/wiki/Do_it_yourself
 
 
 ## Equipment
 
-While the routine is designed to be relatively portable, having access to some
-or all of the following equipment definitely helps:
+At minimum, this routine requires the following pieces of equipment:
 
-- A **set of gymnastic rings**, best when hanging from a tall branch. Two sets
-  if you are using rings as alternatives for both the pull-up bar and the dip
-  station.
-- A **dip station**. Alternatively, chairs can suffice. Alternatively, rings
-  can suffice.
+- **Sandbags.** Specifically, [boulder-style][e4] sandbags, big and small.
+  Instead of sand, consider filling with [pea gravel][e5]. Additionally and
+  optionally, [log-style][e6] sandbags with handles. If possible, prefer
+  multiple individual sandbgas as opposed to fewer modular ones, each with
+  separate filler bags.
 - A **pull-up bar**. Prefer freestanding or wall-mounted/ceiling-mounted bars
   to doorway bars. Alternatively, a sturdy branch can suffice. Alternatively, 
-  rings can suffice.
-- A **dumbell weight set**.
-- A **set of kettlebells**. Alternatively, kettlebell handles
-  [for weight plates][e1] and/or [for dumbells][e2] can suffice.
-- **sandbags** Best for squats, lifts and weighted exercises requiring heavier
-  weights. Tip: use [pea gravel][e3] rather than sand.
-- A **jump rope**. Good for warming up.
+  rings can suffice. Preferably high enough to strap rings on it.
+- A **set of gymnastic rings**, best when hanging from a tall branch. Two sets
+  if you are using rings as alternatives for both the pull-up bar and the dip
+  station. Get good straps with good buckles. You do not want to fall
+  head-first into the ground while inverted.
+
+The following pieces of equipment, though optional, will provide access to much
+greater varieties of movements and variations:
+
+- A set of **dumbbells and plates** ([like these][e7]) accompanied by a couple
+  of **kettlebell handles** ([like these][e8]).
+- A **dip station**. Alternatively, a bench may suffice. Alternatively, rings
+  will suffice.
 - A **rowing machine**. A very nice and versatile piece of equipment, ideal for
   warming up and slow days in which I do not feel like working out.
+- A **jump rope**. Good for warming up.
   
-Note that many of these can be found in fitness parks all around the world.
+Note that some of these can be found in fitness parks all around the world.
 
 [e1]: https://duckduckgo.com/?q=kettlebell+handle+for+dumbell&iax=images&ia=images
 [e2]: https://duckduckgo.com/?q=kettlebell+handle+for+plates&iax=images&ia=images
 [e3]: https://duckduckgo.com/?q=pea+gravel&iax=images&ia=images
+[e4]: https://cdn.shopify.com/s/files/1/0398/6610/5901/products/image_88470b1e-bf7b-499e-9ae0-fba900ee6c61_1024x1024@2x.jpg?v=1622070398
+[e5]: https://en.wikipedia.org/wiki/Gravel#Types
+[e6]: https://assets.roguefitness.com/f_auto,q_auto,c_limit,w_1600,b_rgb:ffffff/catalog/Conditioning/Strength%20Equipment/Sand%20Bags/RA2210/RA2210-H_cgbvhx.png
+[e7]: https://upload.wikimedia.org/wikipedia/commons/e/e3/TwoDumbbells.JPG
+[e8]: https://duckduckgo.com/?q=kettlebell+handle&t=osx&iar=images&iax=images&ia=images
 
 ## License
 
@@ -99,6 +119,17 @@ with the use of this routine.
 [lb1]: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode#s5
 
 ## Changelog
+
+### [2024-11-30](./fitness-routine/html/jaco-s-daily-fitness-routine-2024-11-30.html)
+
+- Slightly reduced daily load while increasing specificity by making each day
+  focus on only two movements rather than three, with more sets per exercise. 
+- Further reduced equipment requirements by focusing exclusively on sandbags
+  and kettlebells.
+- Dropped kettlebell swings and clean & press from strength routine, the former
+  because it's exceedingly dynamic for high loads and the latter because it
+  works better as a benchmark movement than a day-to-day one, given I can clean
+  significantly more than I can press.
 
 ### [2024-11-16](./fitness-routine/html/jaco-s-daily-fitness-routine-2024-11-16.html)
 
