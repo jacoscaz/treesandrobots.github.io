@@ -79,10 +79,20 @@ At minimum, this routine requires the following pieces of equipment:
 - A **pull-up bar**. Prefer freestanding or wall-mounted/ceiling-mounted bars
   to doorway bars. Alternatively, a sturdy branch can suffice. Alternatively, 
   rings can suffice. Preferably high enough to strap rings on it.
+- A **dip station** of any other kind of dipping setup. If nothing else is
+  available, a set of high-back chairs can suffice.
 - A **set of gymnastic rings**, best when hanging from a tall branch. Two sets
   if you are using rings as alternatives for both the pull-up bar and the dip
   station. Get good straps with good buckles. You do not want to fall
-  head-first into the ground while inverted.
+  head-first into the ground while inverted. 
+
+<aside markdown="1">
+**Beware of using rings too soon!**.  Particularly when it comes to pushing
+exercises (push-up, dip), rings can lead you to inadvertent poor shoulder
+placement and scapular movement, greatly increasing the risk of injury.
+**Being able to support yourself on rings is not an indicator that you have
+the strength to perform dynamic movements on them.**
+</aside>  
 
 The following pieces of equipment, though optional, will provide access to much
 greater varieties of movements and variations:
