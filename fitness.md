@@ -5,7 +5,7 @@ permalink: /fitness.html
 ---
 
 <aside markdown="1">
-Last updated on <time datetime="2024-11-30">2024-11-30</time>.
+Last updated on <time datetime="2024-11-30">2024-12-07</time>.
 </aside>
 
 ## Intro
@@ -52,39 +52,48 @@ versions are linked in the [Changelog](#changelog) section below.
    maximizing weekly variety to lessen its impact on joints, ligaments and 
    allow for shorter recovery times.
 4. **Portable**: this routine is designed to be relatively portable, minimizing
-   the amount of required equipment and optimizing for equipment that easy to 
-   carry around and [DIY][g3].
+   the amount of required equipment and optimizing for equipment easy to carry
+   around and/or [DIY][g3].
 5. **Safe**: this routine is designed around weight types with greater
-   stabilization requirements, intentionally limiting the amount of weight that
-   the trainee will be able to move relative to their [1 RM][g2] with more
-   stable and balanced loads. This routine is also designed to minimize the
-   risk of injury and/or damage inherent in handling heavy weights, selecting
-   movement variations that can be easily aborted and weight types that can be
-   easily and quickly discarded.
+   stabilization requirements, limiting the amount of weight that the trainee
+   will be able to move. This routine is also designed to minimize the risk of
+   injury and/or damage inherent in handling heavy weights, selecting movement
+   variations that can be easily aborted.
 
+<aside markdown="1">
+Whereas this routine mostly focuses on sandbags, some variations require
+kettlebells. Needless to say, most things will break when impacted by a
+a kettlebell unintentionally propelled into the air due to grip failure.
+Be careful!
+</aside>
+   
 [g1]: https://journal.crossfit.com/article/what-is-fitness
 [g2]: https://en.wikipedia.org/wiki/One-repetition_maximum
 [g3]: https://en.wikipedia.org/wiki/Do_it_yourself
-
 
 ## Equipment
 
 At minimum, this routine requires the following pieces of equipment:
 
-- **Sandbags.** Specifically, [boulder-style][e4] sandbags, big and small.
+- **Sandbags**. Specifically, [boulder-style][e4] sandbags, big and small.
   Instead of sand, consider filling with [pea gravel][e5]. Additionally and
-  optionally, [log-style][e6] sandbags with handles. If possible, prefer
-  multiple individual sandbgas as opposed to fewer modular ones, each with
-  separate filler bags.
+  optionally, [log-style][e6] sandbags with handles.
 - A **pull-up bar**. Prefer freestanding or wall-mounted/ceiling-mounted bars
-  to doorway bars. Alternatively, a sturdy branch can suffice. Alternatively, 
-  rings can suffice. Preferably high enough to strap rings on it.
-- A **dip station** of any other kind of dipping setup. If nothing else is
-  available, a set of high-back chairs can suffice.
-- A **set of gymnastic rings**, best when hanging from a tall branch. Two sets
-  if you are using rings as alternatives for both the pull-up bar and the dip
-  station. Get good straps with good buckles. You do not want to fall
-  head-first into the ground while inverted. 
+  to doorway bars. Preferably high enough to strap rings on it. Alternatively,
+  a sturdy branch can suffice. Alternatively, rings can suffice. 
+- A **dip station** or any other kind of dipping setup. If nothing else is
+  available, a set of high-back chairs can suffice. Alternatively, rings can
+  suffice.
+- A set of **dumbbells and plates** ([like these][e7]) accompanied by a couple
+  of **kettlebell handles** ([like these][e8]).
+
+### Rings 
+
+A **set of gymnastic rings** can be an invaluable tool, both as a gateway to
+(much) harder movements and variations but also as an incredibly portable,
+all-in-one alternative to both the pull-up bar and the dip station. Get good
+straps with good buckles! You do not want to fall head-first into the ground
+while inverted.
 
 <aside markdown="1">
 **Beware of using rings too soon!**.  Particularly when it comes to pushing
@@ -94,18 +103,13 @@ placement and scapular movement, greatly increasing the risk of injury.
 the strength to perform dynamic movements on them.**
 </aside>  
 
-The following pieces of equipment, though optional, will provide access to much
-greater varieties of movements and variations:
+### Additional equipment
 
-- A set of **dumbbells and plates** ([like these][e7]) accompanied by a couple
-  of **kettlebell handles** ([like these][e8]).
-- A **dip station**. Alternatively, a bench may suffice. Alternatively, rings
-  will suffice.
+Other pieces of equipment I highly suggest:
+
 - A **rowing machine**. A very nice and versatile piece of equipment, ideal for
   warming up and slow days in which I do not feel like working out.
-- A **jump rope**. Good for warming up.
-  
-Note that some of these can be found in fitness parks all around the world.
+- A **jump rope**. Good for warming up and HIIT/metcon workouts.
 
 [e1]: https://duckduckgo.com/?q=kettlebell+handle+for+dumbell&iax=images&ia=images
 [e2]: https://duckduckgo.com/?q=kettlebell+handle+for+plates&iax=images&ia=images
