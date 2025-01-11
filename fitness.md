@@ -68,8 +68,8 @@ versions are linked in the [Changelog](#changelog) section below.
 <aside markdown="1">
 Whereas this routine mostly focuses on sandbags, some variations require
 kettlebells. Needless to say, most things will break when impacted by a
-a kettlebell unintentionally propelled into the air due to grip failure.
-Be careful!
+kettlebell unintentionally propelled into the air due to grip failure.
+**Be careful!**
 </aside>
    
 [g1]: https://journal.crossfit.com/article/what-is-fitness
