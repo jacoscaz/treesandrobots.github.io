@@ -5,7 +5,7 @@ permalink: /fitness.html
 ---
 
 <aside markdown="1">
-Last updated on <time datetime="2024-11-30">2024-12-07</time>.
+Last updated on <time datetime="2024-11-30">2025-01-10</time>.
 </aside>
 
 ## Intro
@@ -47,7 +47,8 @@ versions are linked in the [Changelog](#changelog) section below.
 2. **Generalist**: this routine is designed to develop general fitness levels.
    It does not optimize for strength, power, speed, endurance or hypertrophy
    but aims to strike a _functional_ compromise between each of these that can
-   easily transfer to the trainee's daily life.
+   easily transfer to the trainee's daily life. As such, this routine focuses
+   only on complex, multi-joint movements.
 3. **Sustainable**: this routine is designed to minimize daily volume while
    maximizing weekly variety to lessen its impact on joints, ligaments and 
    allow for shorter recovery times.
@@ -59,6 +60,10 @@ versions are linked in the [Changelog](#changelog) section below.
    will be able to move. This routine is also designed to minimize the risk of
    injury and/or damage inherent in handling heavy weights, selecting movement
    variations that can be easily aborted.
+6. **Mindful**: this routine is designed around movement pairings that account
+   for the neurological effort required to execute them while maintaining and
+   developing body awareness and control. This is the primary reason behind the
+   choice of having only one movement per session requiring external loads.
 
 <aside markdown="1">
 Whereas this routine mostly focuses on sandbags, some variations require
@@ -133,6 +138,12 @@ with the use of this routine.
 [lb1]: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode#s5
 
 ## Changelog
+
+### [2025-01-10](./fitness-routine/html/jaco-s-daily-fitness-routine-2025-01-10.html)
+
+- Kept same exercise pairings but swapped days around for a more consistent
+  alternation of push and pull, mostly to prevent overstressing ligaments and
+  tendons around the elbows
 
 ### [2024-11-30](./fitness-routine/html/jaco-s-daily-fitness-routine-2024-11-30.html)
 
