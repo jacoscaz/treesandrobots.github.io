@@ -5,7 +5,7 @@ permalink: /fitness.html
 ---
 
 <aside markdown="1">
-Last updated on <time datetime="2024-11-30">2025-01-10</time>.
+Last updated on <time datetime="2024-11-30">2025-01-18</time>.
 </aside>
 
 ## Intro
@@ -139,11 +139,23 @@ with the use of this routine.
 
 ## Changelog
 
+### [2025-01-18](./fitness-routine/html/jaco-s-daily-fitness-routine-2025-01-18.html)
+
+- Really liked the stricter alternation of push/pull, joints felt good and
+  strong at the end of the week. 
+- Globally, however, I could have done with a little more rest, particularly 
+  given some (temporary) additional stress factors. Let's see what happens if
+  I switch to a four-day strength template, keeping roughly the same weekly
+  volume.
+- Finding "soft" weights (sandbags, ...) heavy enough to make "loaded carry"
+  movements effective for building strength is really hard. I've moved them
+  to an option for HIIT.
+
 ### [2025-01-10](./fitness-routine/html/jaco-s-daily-fitness-routine-2025-01-10.html)
 
 - Kept same exercise pairings but swapped days around for a more consistent
   alternation of push and pull, mostly to prevent overstressing ligaments and
-  tendons around the elbows
+  tendons around the elbows.
 
 ### [2024-11-30](./fitness-routine/html/jaco-s-daily-fitness-routine-2024-11-30.html)
 
