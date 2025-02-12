@@ -7,7 +7,7 @@ permalink: /now.html
 <aside markdown="1">
 This is my [now page][n1], a page in which I briefly summarize what I'm focused
 on and where I am at this point in my life. More about me in the [about][n3]
-page. Last updated on <time datetime="2024-08-28">2024-08-28</time>. 
+page. Last updated on <time datetime="2025-02-12">2025-02-12</time>. 
 </aside>
 
 [n1]: https://nownownow.com/about
@@ -38,11 +38,10 @@ I'm currently working on:
 
 - Exploring local-first architectures for [home automation] through the
   [Homie MQTT convention].
-- Crafting a wireless charging station that encourages spending more time
-  away from our mobile devices.
-- Developing a daily, sustainable, low-equipment [strength training] routine
-  and incorporating more movement into my life ([sport climbing], [bouldering]
-  and perhaps tennis). Interested? [Check it out!][routine].
+- Learning the ways of [stick welding], which I need for a couple of DYI
+  projects.
+- Developing a daily, sustainable, low-equipment [strength training] routine.
+  Interested? [Check it out!][routine].
 </details>
 
 Looking ahead I'd like to learn the basics of investing, approaching it through
@@ -65,3 +64,4 @@ the lens of long-term financial security and independence.
 [DSO]: https://en.wikipedia.org/wiki/Distribution_network_operator
 [electricity producer]: https://en.wikipedia.org/wiki/Electricity_generation
 [routine]: https://github.com/jacoscaz/fitness-routine/
+[stick welding]: https://en.wikipedia.org/wiki/Shielded_metal_arc_welding
