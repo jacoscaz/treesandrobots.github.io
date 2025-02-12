@@ -64,4 +64,4 @@ the lens of long-term financial security and independence.
 [TSO]: https://en.wikipedia.org/wiki/Transmission_system_operator
 [DSO]: https://en.wikipedia.org/wiki/Distribution_network_operator
 [electricity producer]: https://en.wikipedia.org/wiki/Electricity_generation
-[routine]: {{ "/fitness.html" | prepend: site.baseurl | prepend: site.url }}
+[routine]: https://github.com/jacoscaz/fitness-routine/
