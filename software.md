@@ -1,24 +1,32 @@
 ---
-title: Works
-permalink: /works.html
+title: Software
+permalink: /software.html
 ---
 
 <aside markdown="1">
 Have a look at the [now][w1] page to learn what I'm working on at the moment or
-visit the [about][w2] page for a general introduction. Last updated on <time datetime="2025-01-19">2025-01-19</time>.
+visit the [about][w2] page for a general introduction. Last updated on <time datetime="2025-01-19">2025-03-04</time>.
 </aside>
-
-Moden software development is plagued by unsustainable amounts of
-unwarranted mental overheads and friction, whether due to technical,
-functional and/or organizational causes. A frequent cause of both is
-the endemic tendency to rely on unmaintainable numbers of dependencies, 
-often designed for scenarios enormously more complex than those of our 
-requirements.
 
 This page lists some of the works that I've been able to publish so far.
 Some were born in connection with my professional life, others out of my
-own interests. A common thread across all of these is my constant effort
-to reduce overheads and friction. 
+own interests. 
+
+Moden software development is plagued by unsustainable amounts of mental
+overheads and friction due to technical, functional and/or organizational
+causes. 
+
+A common source of both overheads and friction is the endemic tendency to
+carelessly build up to unmaintainable numbers of dependencies, often designed
+for scenarios enormously more complex than those of our actual requirements.
+Another common source of friction is the tendency to scale horizontally before
+exhausting what can be achieved - within reasonable efforts and timeframes -
+by optimizing hot code paths and scaling vertically.
+
+A common thread across all of my software projects is my constant effort
+to reduce overheads and friction, minimizing dependencies while maintaining
+performance levels worth of the _incredible_ potential that lies within modern
+hardware.
 
 ## Productivity
 
@@ -30,14 +38,14 @@ to reduce overheads and friction.
 ## Libraries
 
 - [`quadstore`](https://www.npmjs.com/package/quadstore):
-  isomorphic, embedded RDF graph database based on LevelDB. Created because
-  of a lack of (maintained) alternatives.
+  isomorphic, embedded RDF graph database for JS runtimes. Born out of a lack
+  of (maintained) alternatives.
 - [`pinetto`](https://www.npmjs.com/package/pinetto):
   a human-friendly, plain-text, performant logger with zero dependencies.
   Created out of frustration with the alternatives, which either lacked basic
   features, brought in too many dependencies or focused on JSON logging.
 - [`typed-ocpp`](https://www.npmjs.com/package/typed-ocpp):
-  primitives for parsing and validation of OCPP 1.6 and OCPP 2.0.1 messages.
+  primitives for parsing and validation of OCPP (1.6, 2.0.1 and 2.1) messages.
   Created to prevent incorrect build-time assumptions about run-time types,
   increasing reliability and development velocity.
 - [`instant-relay`](https://www.npmjs.com/package/instant-relay):

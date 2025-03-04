@@ -17,7 +17,7 @@ What follows is an ongoing effort to list and keep track of some of these
 things. Ideally, I'd like to expand this list until it encompasses everything
 that adds significant, tangible value to my life.
 
-Last updated on 2024-08-27.
+Last updated on 2025-03-04.
 
 ## Computers
 
@@ -60,9 +60,18 @@ my work.
     - [USAG 280 LTS/S9][101]
 - Electricians' Shears
     - [Knipex 95 05 155 SB][100]
+- Hex sockets and wrenches
+    - [Beta BW 913E/C33][102]
+- Combination wrenches
+    - [Bosch 1600A02Z9E][103]
+- Other tools
+    - [Stanley FATMAX FMHT0-75081][104] adjustable wrench
 
 [100]: https://www.knipex.com/products/cable-and-wire-rope-shears/electricians%27-shears/electricians-shears/9505155SB
 [101]: https://www.usag.it/catalog/en/products/details/792/280_LTS_S9/Set_of_9_long_angled_hexagon_keys_with_spherical_head
+[102]: https://www.beta-tools.com/en/products/gamma-beta-worker/gamma-beta-worker/assortment-of-28-hexagon-sockets-and-5-accessories-in-plastic-case.html
+[103]: https://www.bosch-diy.com/in/en/p/15-piece-set-1600a02z9e
+[104]: https://www.stanleytools.com/product/fmht75081/stanley-fatmax-10-adjustable-demo-wrench
 
 ## Fitness
 

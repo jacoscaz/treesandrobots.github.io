@@ -24,8 +24,10 @@ nav:
     href:           "/now.html"
   - name:           "About"
     href:           "/about.html"
-  - name:           "Works"
-    href:           "/works.html"
+  - name:           "Software"
+    href:           "/software.html"
+  - name:           "Projects"
+    href:           "/projects.html"
   - name:           "Things"
     href:           "/things.html"
 
