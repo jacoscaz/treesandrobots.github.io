@@ -11,7 +11,7 @@ These are some of the projects I am particularly proud of.
 
 - [Fitness routine][curr_01]
 
-[curr_01]: (https://github.com/jacoscaz/fitness-routine)
+[curr_01]: https://github.com/jacoscaz/fitness-routine
 
 ## 2025
 
