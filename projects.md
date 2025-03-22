@@ -16,8 +16,10 @@ These are some of the projects I am particularly proud of.
 ## 2025
 
 - [Rustic light fixture for the kitchen table][2025_01]
+- [Turning dumb shutters into smart shutters with Z-Wave][2025_02]
 
 [2025_01]: {{ "/2025/02/rustic-hanging-light-fixture-kitchen-table.html" | prepend: site.baseurl | prepend: site.url }}
+[2025_02]: {{ "/2025/03/dumb-shutters-smart-shutters-zwave.html" | prepend: site.baseurl | prepend: site.url }}
 
 ## 2024
 
