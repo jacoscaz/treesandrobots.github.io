@@ -5,13 +5,14 @@ description: ""
 
 It's been a couple of weeks since I augmented our electric but otherwise dumb
 shutters with [Z-Wave][i1] controllers, so that we may operate them remotely
-via Apple's Home app *and* via MQTT. These are some of my notes and findings.
+via Apple's Home app *and* via MQTT. These are some of the notes and findings
+I collected along the way.
 
-**WARNING: I am not a professional electrician nor am I in any way qualified to
-do any of what follows. I take no responsibility for any outcome arising from or
-in connection with any use of the information contained in this page, which I publish solely for informative
-purposes.** Be careful when working with electricity as you might get seriously
-hurt in the process.
+**WARNING: I am not a professional electrician nor I am in any way qualified
+to do any of what follows. I take no responsibility for any outcome arising
+from or in connection with the use of the information contained in this page,
+which I publish solely for informative purposes.** Be careful when working with
+electricity as you might get seriously hurt in the process.
 
 [i1]: https://en.wikipedia.org/wiki/Z-Wave
 
@@ -44,33 +45,36 @@ hurt in the process.
 
 1. It operates in the sub-GHz range of 800 - 900 MHz, which is generally better
    for passing through concrete, brickwalls and the occasional junction and/or
-   outlet box with too much wire in it. It is reduces the risk of interference
-   with other actors in the crowded 2.4 GHz stage (Wi-Fi, Bluetooth).
-2. It is a *mesh* network in which mains-powered nodes can operate as relays,
-   increasing both the reach and the reliability of the network as a whole.
-3. It isolates devices from the internet, significantly lowering the risk of
+   outlet box with too much wire in it.
+2. It operates well outside of the crowded 2.4 GHz range (Wi-Fi, Bluetooth, 
+   &hellip;), further decreasing the risk of interference with other devices.
+3. It is a *mesh* network in which mains-powered nodes can operate as relays
+   between other nodes and the network controller, increasing both the reach
+   and the reliability of the network as a whole.
+4. It isolates devices from the internet, significantly lowering the risk of
    unexpected firmware updates and dodgy telemetry practices. 
-4. It is a (low-power) radio protocol, which spared me from having to run wires
+5. It is a (low-power) radio protocol, which spared me from having to run wires
    throughout the entire house.
-5. It maintains my devices independent of any software and/or hardware vendor,
-   operating at full capacity even in the absence of an internet connection.
+6. It is entirely self-hosted and independent of any software and/or hardware
+   vendor, operating at full capacity even in the absence of an internet
+   connection.
    
 ## Why did I pick the Shelly Qubino Wave Shutter?
 
-1. It augments the traditional, physical switches rather than replacing them,
-   preserving the immediacy of tactile interfaces whenever manual operation
-   is required and/or whenever in presence of someone that would rather use
-   switches, whether out of preference or necessity.
-2. A friend of mine has been running them for a few years with no issues.
+1. It augments and complement the traditional, physical switches rather than
+   replacing them, preserving the immediacy of tactile interfaces for those
+   cases in which manual operation is either preferred or necessary.
+2. A friend of mine has been running a couple of them for a few years with no
+   issues.
 3. I found them sold in batches of six at a reduced per-unit price.
 
 ## Wiring the controllers
 
-Assuming standard 4-wire shutter motors, the controllers are very easy to wire.
-I suspect that, in most cases, the trickiest bit might be finding wire _of the
-right colors_ to match local standards and best practices. Also, in most places
-shutters are now powered by dedicated circuits with dedicated breakers. Always 
-maintain proper isolation between different AC circuits.
+Assuming standard 4-wire shutter motors, the shutter controllers are very
+easy to wire. I suspect that, in most cases, the trickiest bit might be finding
+wires _of the right colors_ to match local standards and best practices. Also,
+in most places shutters are now powered by dedicated AC circuits with dedicated
+breakers, thus requiring further care in order to maintain circuit isolation.
 
 <figure>
   <img src="{{ '/images/2025-03-18-zwave-shutter-control/zwave-shutter-controller-wiring.excalidraw.png' | prepend: site.baseurl | prepend: site.url }}" height=500>
@@ -80,10 +84,14 @@ maintain proper isolation between different AC circuits.
   </figcaption>
 </figure>
 
-In a couple of cases in which I was not able to fit the controller within
-the same outlet/switch/junction box that hosted the switch for the respective
-shutter I resorted to placing the former into an adjacent box, running the
-necessary wires between the two.
+An exceedingly busy outlet/switch/junction that cannot fit anything else but 
+what is already in it can be worked around by placing the shutter controller
+in an adjacent box and running the necessary wires between the two. Here in 
+Italy it is relatively common for switch boxes to sit above an accompanying
+outlet or juction box positioned closer to the floor. If the hand-level switch
+box is too busy, the accompanying outlet or junction box is likely to have
+plenty of room to house the shutter controller. Furthermore, the wires for the
+AC circuit dedicated to the shutters are likely already passing through it.
 
 ## Z-Wave SmartStart inclusion
 
@@ -100,12 +108,17 @@ latter in *inclusion* mode for the pairing to happen.
 For what it's worth, my experience with SmartStart inclusion was terrible.
 I was not able to make it work at all, not even once, not even after updating
 the controller's firmware (see below). The normal inclusion process, however,
-worked perfectly and spectacularly well.
+worked perfectly well.
 
 ## Homebridge accessory configuration
 
-What follows is the configuration template I'm currently using for each of the
-controllers. I will be refining this template over the next few weeks, mainly 
+I'm using [Homebridge][h1] and its [mqttthing plugin][h2] to bridge the gap
+between the Z-Wave network and the Apple's HomeKit ecosystem. What follows is
+a reference configuration template that maps the MQTT topics managed by Z-Wave
+JS UI - modelling the state of the Shelly controllers - into the capabilities
+of an [Apple HomeKit][h3] accessory.
+
+I will be refining this template over the next few weeks, mainly 
 to try and work around some minor consistency issues with Apple's reporting of
 the shutters's activation state.
 
@@ -132,6 +145,10 @@ the shutters's activation state.
     "accessory": "mqttthing"
 },
 ```
+
+[h1]: https://homebridge.io 
+[h2]: https://github.com/arachnetech/homebridge-mqttthing
+[h3]: https://developer.apple.com/documentation/homekit/
  
 ## Interference from the Raspberry Pi's USB 3.0 ports
 
@@ -146,8 +163,8 @@ means of a cheap USB 2.0 extension cable, tucked away behind a wardrobe.
 
 ## Updating the network controller's firmware
 
-> **WARNING: what follows might result in the irreparable [bricking][f4] of
-> your controller.**
+**WARNING: what follows might result in the irreparable [bricking][f4] of your
+controller. See the disclaimer at the top of the page.**
 
 Various versions of the Aeotec Z-Stick 7's firmware can be downloaded from
 [this page][f1] and flashed onto the controller via Z-Wave JS UI. Should
