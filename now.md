@@ -7,7 +7,7 @@ permalink: /now.html
 <aside markdown="1">
 This is my [now page][n1], a page in which I briefly summarize what I'm focused
 on and where I am at this point in my life. More about me in the [about][n3]
-page. Last updated on <time datetime="2025-02-12">2025-02-12</time>. 
+page. Last updated on <time datetime="2026-06-27">2026-06-27</time>. 
 </aside>
 
 [n1]: https://nownownow.com/about
@@ -29,15 +29,19 @@ behind the scenes, ranging from [OCPP] gateways to fleet-wide control loops.
 </details>
 
 Outside of work and on top of the foundational time spent with my family, our
-friends and our dog, I'm mainly focusing on fitness, healthy habits and home
-automation.
+friends and our dog, I'm mainly focusing on fitness, DIY, home automation and
+AI.
 
 <details markdown="1">
 <summary>More specifically</summary>
 I'm currently working on:
 
 - Exploring local-first architectures for [home automation] through the
-  [Homie MQTT convention].
+  [Homie MQTT convention] through [Grovekit].
+- Exploring approaches for epistomological continuity in agentic harnesses
+  through [Fondamenta].
+- Trying to define the contours and principles of _sustainable software
+  for the people of tomorrow_.
 - Learning the ways of [stick welding], which I need for a couple of DYI
   projects.
 - Developing a daily, sustainable, low-equipment [strength training] routine.
@@ -65,3 +69,5 @@ the lens of long-term financial security and independence.
 [electricity producer]: https://en.wikipedia.org/wiki/Electricity_generation
 [routine]: https://github.com/jacoscaz/fitness-routine/
 [stick welding]: https://en.wikipedia.org/wiki/Shielded_metal_arc_welding
+[Grovekit]: https://github.com/grovekit
+[Fondamenta]: https://github.com/jacoscaz/fondamenta

@@ -9,7 +9,8 @@ Hi, I'm Jacopo. Welcome to Trees and Robots, my personal blog.
 
 <aside markdown="1">
 Have a look at the [now][8] page to learn what I'm working on at the moment
-or visit the [works][9] page for a list of past and current endeavors.
+or visit the [software][10] and [projects][9] pages for a list of past and 
+current endeavors.
 </aside>
 
 I'm a self-employed software developer focusing on platforms for the Internet
@@ -48,4 +49,5 @@ permitted by fair use policies ([US][6], [EU][7]).
 [6]: https://www.copyright.gov/fair-use/more-info.html
 [7]: https://www.europarl.europa.eu/doceo/document/A-6-2007-0073_EN.html
 [8]: {{ "/now.html" | prepend: site.baseurl | prepend: site.url }}
-[9]: {{ "/works.html" | prepend: site.baseurl | prepend: site.url }}
+[9]: {{ "/projects.html" | prepend: site.baseurl | prepend: site.url }}
+[10]: {{ "/software.html" | prepend: site.baseurl | prepend: site.url }}
