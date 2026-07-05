@@ -1,0 +1,15 @@
+
+services:
+  jekyll:
+    environment:
+      # Required so that the `url` in _config.yml is used as-is as opposed
+      # to the hostname being replaced with the value of the `host` argument
+      # passed to `jekyll serve`.
+      - JEKYLL_ENV=production
+    image: jekyll/jekyll
+    volumes:
+      - .:/srv/jekyll
+    ports:
+      - "127.0.0.1:4000:4000"
+      - "127.0.0.1:35729:35729"
+    command: jekyll serve --host 0.0.0.0 --livereload --config "_config.yml,_config.docker.yml"
