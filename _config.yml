@@ -16,10 +16,10 @@ nav:
     href:           "/writings.html"
     layout:         "post"
     rss:            "/feed.xml"
-  - name:           "Syslog"
-    href:           "/syslog.html"
-    layout:         "syslog"
-    rss:            "/feed-syslog.xml"
+  # - name:           "Syslog"
+  #   href:           "/syslog.html"
+  #   layout:         "syslog"
+  #   rss:            "/feed-syslog.xml"
   - name:           "Now"
     href:           "/now.html"
   - name:           "About"
@@ -36,9 +36,9 @@ sass:
   style:            :compressed
 
 
-collections:
-  syslog:
-    output: false
+# collections:
+#   syslog:
+#     output: false
 
 # Scopes
 defaults:
@@ -54,12 +54,12 @@ defaults:
       type:         "posts"
     values:
       layout:       "post"
-  -
-    scope:
-      path:         ""
-      type:         "syslog"
-    values:
-      layout:       "syslog"
+  # -
+  #   scope:
+  #     path:         ""
+  #     type:         "syslog"
+  #   values:
+  #     layout:       "syslog"
 
 markdown: kramdown
 kramdown:
