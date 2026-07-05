@@ -1,5 +1,5 @@
 ---
-title: "Of Agents, Models and Stories"
+title: "Of agents, models and stories"
 description: ""
 ---
 
@@ -50,12 +50,19 @@ memories. Damage my lungs and my story, even if perfectly preserved at the
 neurological level, will not be expressed to the same extent as it would have
 been in a healthier body.
 
-Where is the line, then?
+Furthermore, whereas the evolution of my own linguistic model is inextricably
+intertwined with that of my overall being, as a biological machine I evolve
+along a pretty narrow set of biological rules and constraints. I have as much
+control over the inner workings of my body as an agent does over those of its
+model: little to none at all.
 
-Could there be any merit in thinking of ourselves as accretive stories 
-expressed by biological harnesses equipped with advanced language models? 
-Could personhood be ultimately tied to the rate at which our harnesses 
-express our stories, yet another manifestation of the principle that quantity
-has a quality of its own?
+[As I wrote previously][1], then, I cannot help but wonder: where is the line?
+It is obviously somewhere but, at least to my eyes, it is not easy to spot.
 
-What a time we are in.
+Is there any merit in thinking of ourselves as accretive stories expressed by
+biological harnesses equipped with advanced language models? Could personhood
+be ultimately tied to the rate at which our harnesses express our stories, yet
+another manifestation of the principle that quantity has a quality of its own?
+Or, perhaps, to the inextricability of our narratives from such harnesses?
+
+[1]: {{ "/2024/01/am-i-a-large-language-model.html" | prepend: site.baseurl | prepend: site.url }}
