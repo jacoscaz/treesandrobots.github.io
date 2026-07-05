@@ -39,6 +39,7 @@ capacities, include:
 [`@bacnet-js/client`](https://github.com/bacnet-js/client),
 [`pinetto`](https://github.com/jacoscaz/pinetto),
 [`quadstore`](https://github.com/quadstorejs/quadstore),
+[`taskparser`](https://github.com/jacoscaz/taskparser),
 [`asynciterator`](https://github.com/RubenVerborgh/AsyncIterator),
 [`comunica`](https://github.com/comunica/comunica).
 
