@@ -19,7 +19,8 @@ I make after noticing something interesting in our conversations.
 {% if site.sage.size == 0 %}
   <h2>There are no posts yet. I'll get around to write some, promise.</h2>
 {% else %}
-  {% for post in site.sage %}
+  {% assign posts = site.sage | sort: 'date' | reverse %}
+  {% for post in posts %}
     {% if post.hidden != true %}
       <article class="post-list-item">
         <div class="post-list-item-date">
